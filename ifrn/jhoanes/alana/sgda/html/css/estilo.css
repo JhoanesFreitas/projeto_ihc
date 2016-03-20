@@ -1,34 +1,47 @@
+/**
+*
+*Configurações de menu
+*
+*/
+
 *{margin-top: 0; margin-left: 5; padding: 0;}
 
+/*estilo da fonte do menu*/
 body{
 	font-family: arial, helvetica, sans-serif;
 	font-size: 15px;
 }
 
+/*configurações no menu como todo*/
 .menu{
-	margin-top: 7px;
+	margin-top: 12px;
 	list-style: none;
 	border: 1px solid #c0c0c0;
 	background-color: #6A5ACD;
+	padding-top: 5px;
+	padding-bottom: 6px;
 	float: left;
 	margin-left: 2%;
 }
 
+/*configurações dos itens do menu*/
 .menu li{
 	position: relative;
 	float: left;
 	padding: 5px;
 	border-right: 0px solid #c0c0c0;
-	padding-left: 50px;
-	padding-right: 50px;
+	padding-left: 40px;
+	padding-right: 40px;
 }
 
+/*configurações do conteúdo dos itens*/
 .menu li a{
-	color: #fff; text-decoration: none; padding: 5px 10px; display: block;
+	color: #fff; text-decoration: none; padding: 5px 9px; display: block;
 }
 
+/*evento de passar o mouse sobre algum item*/
 .menu li a:hover{
-	background: #000080;
+	background: #9400D3;
 	color: #fff;
 	-moz-box-shadow:0 3px 10px 0 #CCC; 
 	-webkit-box-shadow:0 3px 10px 0 #ccc; 
@@ -36,6 +49,7 @@ body{
 	color: #fff;
 }
 
+/*configurações de subitem*/
 .menu li ul{
 	position: absolute;
 	top: 25px;
@@ -45,8 +59,10 @@ body{
 	color: #fff;
 }
 
+/*evento de passar o mouse no item com sub-itens*/
 .menu li:hover ul, .menu li.over ul{display: block;}
 
+/*configurações dos sub-itens*/
 .menu li ul li{
 	border: 0px solid #c0c0c0;
 	display: block;
@@ -55,6 +71,7 @@ body{
 	color: #fff;
 }
 
+/*configurações dos conteúdos do sub-item*/
 .menu li ul li a{ 
 	background-color: #6A5ACD; 
 	color: #fff;
