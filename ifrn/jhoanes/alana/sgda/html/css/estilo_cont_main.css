@@ -17,11 +17,48 @@ body{
 	font-size: 15px;
 }
 
+a:link{
+	text-decoration: none;
+}
+
 /*alinhamento do texto nos parágrafos*/
 .home_init p{
 	text-align: justify;
 }
 
 .home_products{
-	
+
+	position: absolute;
+	margin:44% 5% 10% 20%;
+	padding: 14px;
+	border: 1px solid #c0c0c0;	
+	text-align: center;
+
+}
+
+.home_products figure{
+	position: relative;
+	width: 120px;
+	height: 110px;
+	margin-right: 35px;
+	float: left;
+}
+
+.home_products figure a img{
+	position: relative;
+	width: 120px;
+	height: 100px;
+	margin-right: 35px;
+	float: left;
+}
+
+.home_products figcaption{
+	position: relative;
+	width: 120px;
+	height: 100px;
+	margin-right: 35px;
+}
+
+.home_products figure a figcaption:hover{
+	color: #abc;
 }
