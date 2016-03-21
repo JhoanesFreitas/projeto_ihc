@@ -17,12 +17,12 @@ body{
 	z-index: 2;
 	margin-top: 0px;
 	list-style: none;
-	border: 1px solid #c0c0c0;
+	border: 10% solid #c0c0c0;
 	background-color: #6A5ACD;
-	padding-top: 9px;
-	padding-bottom: 10px;
+	padding-top: 1%;
+	padding-bottom: 1%;
 	float: left;
-	margin-left: 18%;
+	margin-left: 19%;
 	position: fixed;
 }
 
@@ -30,15 +30,26 @@ body{
 .menu li{
 	position: relative;
 	float: left;
-	padding: 20px;
-	border-right: 0px solid #c0c0c0;
+	padding: 1%;
+	border-right: 1% solid #c0c0c0;
 	padding-left: 40px;
-	padding-right: 40px;
+	padding-right: 30px;
+	padding-bottom: 0px;
+}
+
+.menu a li{
+	position: relative;
+	float: left;
+	padding: 1%;
+	border-right: 1% solid #c0c0c0;
+	padding-left: 40px;
+	padding-right: 30px;
+	padding-bottom: 0px;
 }
 
 /*configurações do conteúdo dos itens*/
 .menu li a{
-	color: #fff; text-decoration: none; padding: 5px 4px; display: block;
+	color: #fff; text-decoration: none; padding: 2% 2%; display: block;
 }
 
 /*evento de passar o mouse sobre algum item*/
@@ -79,7 +90,7 @@ body{
 }
 
 .horizontal {
-	margin-top: 650px;
+	margin-top: 60%;
 	margin-left: 5%;
 	size: 5px;
 	width: 90%;
@@ -88,7 +99,7 @@ body{
 }
 
 .horizontal_horarios {
-	margin-top: 15px;
+	margin-top: 10%;
 	margin-left: 5%;
 	size: 5px;
 	width: 90%;
@@ -101,7 +112,7 @@ body{
 	width: 2px;
 	float: left;
 	margin-top: 10px;
-	margin-left: 5%;
+	margin-left: 2%;
 }
 
 .vertical_horarios{
