@@ -78,19 +78,37 @@ a:link{
 .servicos p{
 	font-size: 35px;
 	position: relative;
-	margin: 40px 0px 0px 7%;
+	margin: 40px 0px 0px 5%;
 	float: left;
 }
 
-.cuidados_cabelo{
+.cuidados{
 	font-size: 25px;
 	position: relative;
 	float: left;
 	margin: 140px 0px 0px -20%;
 }
 
+
+/*Menu horarios*/
+.horarios p{
+	font-size: 35px;
+	position: relative;
+	margin: 16px 0px 0px 5%;
+	float: left;
+}
+
+.dias_semana{
+	font-size: 25px;
+	text-align: center;
+	position: relative;
+	float: left;
+	margin: 80px 280px 0px -21%;
+	list-style-type: none;
+}
+
 .home_sobre{
-	position: absolute;
+	position: relative;
 	margin: 100% 5% 10% 20%;
 	padding: 14px;
 	float: left;
