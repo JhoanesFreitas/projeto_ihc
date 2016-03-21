@@ -21,8 +21,19 @@ a:link{
 	text-decoration: none;
 }
 
+/*Nome abaixo do menu*/
+.nome_salao{
+	position: relative;
+	font-size: 50px;
+	float: left;
+	margin: 120px 0px 0px 28%;
+	letter-spacing: 20px
+}
+
 /*alinhamento do texto nos parágrafos*/
 .home_init p{
+	position: relative;
+	top: 60px;
 	text-align: justify;
 }
 
@@ -61,4 +72,18 @@ a:link{
 
 .home_products figure a figcaption:hover{
 	color: #abc;
+}
+
+.servicos p{
+	font-size: 35px;
+	position: relative;
+	margin: 40px 0px 0px 7%;
+	float: left;
+}
+
+.cuidados_cabelo{
+	font-size: 25px;
+	position: relative;
+	float: left;
+	margin: 140px 0px 0px -20%;
 }
