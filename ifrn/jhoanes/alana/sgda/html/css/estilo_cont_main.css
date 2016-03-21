@@ -92,7 +92,7 @@ a:link{
 
 .home_sobre{
 	position: absolute;
-	margin:58% 5% 10% 20%;
+	margin: 100% 5% 10% 20%;
 	padding: 14px;
 	float: left;
 	border: 1px solid #c0c0c0;	
@@ -114,7 +114,7 @@ a:link{
 }
 
 #contato{
-	margin-left: 140px;
+	margin-left: 120px;
 	
 }
 
@@ -124,13 +124,14 @@ a:link{
 }
 
 #list_city{
+	position: relative;
 	margin-top: 20px;
-	margin-left: -765px;
+	margin-left: -75%;
 }
 
 #list_tel{
 	margin-top: -90px;
-	margin-left: 440px;
+	margin-left: 45%;
 	text-align: justify;
 }
 
