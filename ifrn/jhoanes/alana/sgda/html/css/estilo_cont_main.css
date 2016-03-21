@@ -74,6 +74,7 @@ a:link{
 	color: #abc;
 }
 
+/*Menu serviços*/
 .servicos p{
 	font-size: 35px;
 	position: relative;
@@ -86,4 +87,64 @@ a:link{
 	position: relative;
 	float: left;
 	margin: 140px 0px 0px -20%;
+}
+
+.home_sobre{
+	position: absolute;
+	margin:58% 5% 10% 20%;
+	padding: 14px;
+	float: left;
+	border: 1px solid #c0c0c0;	
+	text-align: center;
+	overflow: auto;
+}
+
+.home_sobre h4{
+
+	float: left;
+	margin-top: 1%;
+	text-align: justify;
+}
+
+
+#saloes{
+	margin-left: 45px;
+	margin-right: 180px;
+}
+
+#contato{
+	margin-left: 140px;
+	
+}
+
+#sociais{
+	margin-left: 300px;
+	padding-right: 50px;
+}
+
+#list_city{
+	margin-top: 20px;
+	margin-left: -765px;
+}
+
+#list_tel{
+	margin-top: -90px;
+	margin-left: 440px;
+	text-align: justify;
+}
+
+#list_sociais{
+	margin-top: -90px;
+	margin-left: 800px;
+	text-align: justify;
+}
+
+.home_sobre ul li{
+	list-style: none !important;
+	margin-top: 2px;
+}
+
+.home_sobre ul li img{
+	list-style: none !important;
+	padding-right: 5px;
 }
