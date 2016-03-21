@@ -6,8 +6,9 @@
 
 .home_init{
 	position: absolute;
-	margin:10% 5% 0 20%;
-	padding: 10px;
+	margin:12% 22% 0 19%;
+	padding: 30px;
+	padding-top: 5px;
 	border: 1px solid #c0c0c0;
 }
 
@@ -33,15 +34,15 @@ a:link{
 /*alinhamento do texto nos parágrafos*/
 .home_init p{
 	position: relative;
-	top: 60px;
+	top: 30px;
 	text-align: justify;
 }
 
 .home_products{
 
 	position: absolute;
-	margin:44% 5% 10% 20%;
-	padding: 14px;
+	margin:39% 15% 10% 19%;
+	padding: 1%;
 	border: 1px solid #c0c0c0;	
 	text-align: center;
 	overflow: auto;
