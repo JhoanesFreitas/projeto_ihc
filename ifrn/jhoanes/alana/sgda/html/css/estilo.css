@@ -15,12 +15,12 @@ body{
 /*configurações no menu como todo*/
 .menu{
 	z-index: 2;
-	margin-top: 12px;
+	margin-top: 0px;
 	list-style: none;
 	border: 1px solid #c0c0c0;
 	background-color: #6A5ACD;
-	padding-top: 5px;
-	padding-bottom: 6px;
+	padding-top: 9px;
+	padding-bottom: 10px;
 	float: left;
 	margin-left: 18%;
 	position: fixed;
