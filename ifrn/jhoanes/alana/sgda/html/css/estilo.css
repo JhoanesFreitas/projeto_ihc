@@ -21,7 +21,8 @@ body{
 	padding-top: 5px;
 	padding-bottom: 6px;
 	float: left;
-	margin-left: 2%;
+	margin-left: 18%;
+	position: fixed;
 }
 
 /*configurações dos itens do menu*/
@@ -36,7 +37,7 @@ body{
 
 /*configurações do conteúdo dos itens*/
 .menu li a{
-	color: #fff; text-decoration: none; padding: 5px 9px; display: block;
+	color: #fff; text-decoration: none; padding: 5px 4px; display: block;
 }
 
 /*evento de passar o mouse sobre algum item*/

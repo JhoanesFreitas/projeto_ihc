@@ -1,0 +1,27 @@
+/**
+*
+*	Ćonfigurações de conteúdo da página inicial
+*
+*/
+
+.home_init{
+	position: absolute;
+	margin:10% 5% 0 20%;
+	padding: 10px;
+	border: 1px solid #c0c0c0;
+}
+
+/*estilo da fonte*/
+body{
+	font-family: arial, helvetica, sans-serif;
+	font-size: 15px;
+}
+
+/*alinhamento do texto nos parágrafos*/
+.home_init p{
+	text-align: justify;
+}
+
+.home_products{
+	
+}
