@@ -90,7 +90,7 @@ body{
 }
 
 .horizontal {
-	margin-top: 650px;
+	margin-top: 60%;
 	margin-left: 5%;
 	size: 5px;
 	width: 90%;
@@ -99,7 +99,7 @@ body{
 }
 
 .horizontal_horarios {
-	margin-top: 15px;
+	margin-top: 10%;
 	margin-left: 5%;
 	size: 5px;
 	width: 90%;
@@ -112,7 +112,7 @@ body{
 	width: 2px;
 	float: left;
 	margin-top: 10px;
-	margin-left: 5%;
+	margin-left: 2%;
 }
 
 .vertical_horarios{
