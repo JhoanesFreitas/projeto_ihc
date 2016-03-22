@@ -172,3 +172,26 @@ a:link{
 	list-style: none !important;
 	padding-right: 5px;
 }
+
+/*Agendamento*/
+
+.field{
+
+	padding: 2%;
+}
+
+.titulo{
+	font-size: 19px;
+	margin-top: 13px;
+}
+
+.agendar{
+	position: relative;
+	top: 150px;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.hora{
+	margin-left: 10%;
+}
