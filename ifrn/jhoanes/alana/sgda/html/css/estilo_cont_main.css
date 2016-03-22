@@ -176,7 +176,6 @@ a:link{
 /*Agendamento*/
 
 .field{
-
 	padding: 2%;
 }
 
@@ -194,4 +193,16 @@ a:link{
 
 .hora{
 	margin-left: 10%;
+}
+
+.botao{
+	font-size:20px;
+    font-family:Verdana,Helvetica;
+    font-weight:bold;
+    color:white;
+    background:#638cb5;
+    border:0px;
+    width:120px;
+    height:30px;
+    margin: 0px 3% 70px 3%;
 }
