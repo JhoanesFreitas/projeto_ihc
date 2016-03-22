@@ -30,6 +30,18 @@ body{
 	position: relative;
 	float: left;
 	padding: 1%;
+	color: #fff;
+	border-right: 1% solid #c0c0c0;
+	padding-top: 15px;
+	padding-left: 40px;
+	padding-right: 30px;
+	padding-bottom: 15px;
+}
+
+.menu a{
+	position: relative;
+	float: left;
+	padding: 1%;
 	border-right: 1% solid #c0c0c0;
 	padding-top: 15px;
 	padding-left: 40px;
@@ -48,7 +60,14 @@ body{
 }
 
 /*configurações do conteúdo dos itens*/
-.menu li a{
+/*.menu li a{
+	color: #fff;
+	text-decoration: none; 
+	padding: 2% 2% 1%; 
+	display: block;
+}*/
+
+.menu a li{
 	color: #fff;
 	text-decoration: none; 
 	padding: 2% 2% 1%; 
@@ -56,7 +75,33 @@ body{
 }
 
 /*evento de passar o mouse sobre algum item*/
-.menu li a:hover{
+/*.menu li a:hover{
+	background: #9400D3;
+	color: #fff;
+	-moz-box-shadow:0 3px 10px 0 #CCC; 
+	-webkit-box-shadow:0 3px 10px 0 #ccc; 
+	text-shadow:0px 0px 5px #fff; 
+}*/
+
+/*.menu a li:hover{
+	background: #9400D3;
+	color: #fff;
+	-moz-box-shadow:0 3px 10px 0 #CCC; 
+	-webkit-box-shadow:0 3px 10px 0 #ccc; 
+	text-shadow:0px 0px 5px #fff; 
+}*/
+
+/*.menu li:hover{
+	background: #9400D3;
+	color: #fff;
+}*/
+
+.menu a:hover{
+	background: #9400D3;
+	color: #fff;
+}
+
+.menu a li:hover{
 	background: #9400D3;
 	color: #fff;
 	-moz-box-shadow:0 3px 10px 0 #CCC; 
@@ -66,7 +111,7 @@ body{
 
 .menu li:hover{
 	background: #9400D3;
-	color: #fff;
+	color: #fff; 
 }
 
 /*configurações de subitem*/
@@ -83,16 +128,17 @@ body{
 .menu li:hover ul, .menu li.over ul{display: block;}
 
 /*configurações dos sub-itens*/
-.menu li ul li{
+.menu li ul a{
 	border: 0px solid #c0c0c0;
+	background-color: #6A5ACD;
 	display: block;
 	width: 210px;
-	padding: 0px;
+	padding: 2%;
 	color: #fff;
 }
 
 /*configurações dos conteúdos do sub-item*/
-.menu li ul li a{ 
+.menu a li ul li a{ 
 	padding-top: 3%;
 	padding-bottom: 2%;
 	background-color: #6A5ACD; 
