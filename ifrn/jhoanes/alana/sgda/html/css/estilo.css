@@ -18,11 +18,12 @@ body{
 	margin-top: 0px;
 	list-style: none;
 	border: 10% solid #c0c0c0;
-	background-color: #6A5ACD;
+	background-color: #800000;/*#6A5ACD*/
 	padding-top: 0%;
 	float: left;
 	margin-left: 19%;
 	position: fixed;
+	
 }
 
 /*configurações dos itens do menu*/
@@ -46,7 +47,7 @@ body{
 	padding-top: 15px;
 	padding-left: 40px;
 	padding-right: 30px;
-	padding-bottom: 15px;
+	padding-bottom: 19px;
 }
 
 .menu a li{
@@ -97,12 +98,12 @@ body{
 }*/
 
 .menu a:hover{
-	background: #9400D3;
+	background: #B22222;
 	color: #fff;
 }
 
 .menu a li:hover{
-	background: #9400D3;
+	background: #B22222;
 	color: #fff;
 	-moz-box-shadow:0 3px 10px 0 #CCC; 
 	-webkit-box-shadow:0 3px 10px 0 #ccc; 
@@ -110,7 +111,7 @@ body{
 }
 
 .menu li:hover{
-	background: #9400D3;
+	background: #B22222;
 	color: #fff; 
 }
 
@@ -130,7 +131,7 @@ body{
 /*configurações dos sub-itens*/
 .menu li ul a{
 	border: 0px solid #c0c0c0;
-	background-color: #6A5ACD;
+	background-color: #800000;
 	display: block;
 	width: 210px;
 	padding: 2%;
@@ -141,12 +142,12 @@ body{
 .menu a li ul li a{ 
 	padding-top: 3%;
 	padding-bottom: 2%;
-	background-color: #6A5ACD; 
+	background-color: #800000; 
 	color: #fff;
 }
 
 .horizontal {
-	margin-top: 60%;
+	margin-top: 56%;
 	margin-left: 5%;
 	size: 5px;
 	width: 90%;
@@ -155,7 +156,7 @@ body{
 }
 
 .horizontal_horarios {
-	margin-top: 10%;
+	margin-top: 5%;
 	margin-left: 5%;
 	size: 5px;
 	width: 90%;

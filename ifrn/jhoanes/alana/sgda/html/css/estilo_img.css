@@ -7,11 +7,10 @@
 /*imagem logo superior esquerdo*/
 .drawable img{
 	float: left;
-	background-color: #fff;
 	z-index: 2;
 	width: 15%;
-	height: 50px;
-	padding: 5px;
+	height: 53px;
+	padding: 1px;
 	margin: 0px 0px 20px 40px;	
 	position: fixed;
 }
