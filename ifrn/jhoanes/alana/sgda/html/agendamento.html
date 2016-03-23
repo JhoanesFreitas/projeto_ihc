@@ -53,7 +53,7 @@
 
 	</nav>
 </div>
-
+<div class="divAgendar">
 	<div class="agendar">
 
 		<form action="sucesso.html">
@@ -61,7 +61,7 @@
 
 				<p class="titulo">
 					<label for="name">Nome completo: </label>
-					<input type="name"/>
+					<input type="name" class="inputTextarea" />
 				</p>
 
 				<p class="titulo">
@@ -77,16 +77,16 @@
 					
 					<label for=”detalheAtend”> O que você deseja? </label>
 					<p size="15px" top="100px">Detalhe o seu atendimento</p>
-					<textarea rows="10" cols="60" maxlength="500"></textarea>
+					<textarea rows="10" cols="60" maxlength="500" class="inputTextarea"></textarea>
 				</p>
 
 				<p class="titulo">
 
 					<label class="data" for=”dataAtend”> Data: </label>
-					<input type="text" name="dataDia" id="dataDia" maxlength=2 size=2 /> / <input type="text" name="dataMes" id="dataMes" maxlength=2 size=2 /> / <input type="text" name="dataAno" id="dataAno" maxlength=4 size=4 />
+					<input type="text" name="dataDia" id="dataDia" maxlength=2 size=2 class="inputTextarea"/> / <input type="text" name="dataMes" id="dataMes" maxlength=2 size=2 class="inputTextarea"/> / <input type="text" name="dataAno" id="dataAno" maxlength=4 size=4 class="inputTextarea"/>
 
 					<label class="hora" for="horaAtend"> Hora: </label>
-					<input type="text" name="hora" id="hora" maxlength=2 size=2 /> : <input type="text" name="min" id="min" maxlength=2 size=2 />
+					<input type="text" name="hora" id="hora" maxlength=2 size=2 class="inputTextarea"/> : <input type="text" name="min" id="min" maxlength=2 size=2 class="inputTextarea"/>
 				</p>
 				
 			</fieldset><br/>
@@ -108,6 +108,8 @@
 				<input type="submit" value="Enviar" class="botao" />
 			</center>
 	</div>
+</form>
+</div>
 		
 </body>
 
