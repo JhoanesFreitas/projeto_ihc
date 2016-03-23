@@ -16,6 +16,7 @@
 	<link rel="stylesheet" type="text/css" href="css/estilo.css"/>
 	<link rel="stylesheet" type="text/css" href="css/estilo_img.css"/>
 	<link rel="stylesheet" type="text/css" href="css/estilo_cont_main.css"/>
+	<link rel="stylesheet" type="text/css" href="css/estilo_popup.css">
 
 	<!--[if lte IE 8]-->
 	<script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -47,17 +48,19 @@
 
 			<a href="file_products.html"><li>Produtos</li></a>
 			<a href="#sobre"><li>Sobre</li></a>
+
 			<a href="#openModal"><li>Entre</li></a>
-			<div id="openModal" class="modalDialog">
+
+			<div id="openModal" class="modalDialogEntrar">
   					<div>
-    					<a href="#close" title="Close" class="close">X</a>
+    					<a href="#close" title="Close" class="closePopupEntrar">X</a>
     					<h2>Entrar</h2>
-    					<label>E-mail: </label>
-    					<input type="name" class="inputTextarea" />
-    					<label>Senha: </label>
-    					<input type="name" class="inputTextarea" />
-    					<a href="#"><input type="button" value="Entrar" class="botao"></a>
-    					<a href="file_main.html"><input type="button" value="Cadastre-se" class="botao"></a>
+    					<p><label>E-mail: </label>
+    					<input type="name" class="inputTextarea" /></p>
+    					<p><label>Senha: </label>
+    					<input type="name" class="inputTextarea" /></p>
+    					<a href="#"><input type="button" value="Entrar" class="botaoPopup"></a>
+    					<a href="cadastro.html"><input type="button" value="Cadastre-se" class="botaoPopup"></a>
   					</div>
 			</div>
 			<a href="cadastro.html"><li>Cadastre-se</li></a>
