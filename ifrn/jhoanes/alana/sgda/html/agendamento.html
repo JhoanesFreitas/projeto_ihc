@@ -24,13 +24,13 @@
 </head>
 
 <body>
-
+<div class="cabecalho">
 	<nav>
 
 		<!--image logo localizada no canto superior esquerdo-->
 		<div class="drawable">
 			<a href="#">
-				<img src="drawable/icon-hair.png" title="Home" width="250" height="50">
+				<img src="drawable/logo.png" title="Home" width="250" height="50">
 			</a>
 		</div>
 
@@ -41,18 +41,18 @@
 			<li>Disponibilidade
 				<ul>
 					<a href="file_main.html#labelhorarios"><li>Horário de atendimento</li></a>
-					<a href="#"><li>Marque um horário</li></a>
+					<a href="agendamento.html"><li>Marque um horário</li></a>
 				</ul>
 			</li>
 
 			<a href="file_products.html"><li>Produtos</li></a>
 			<a href="file_main.html#sobre"><li>Sobre</li></a>
 			<a href="#"><li>Entre</li></a>
-			<a href="#"><li>Cadastre-se</li></a>
+			<a href="cadastro.html"><li>Cadastre-se</li></a>
 		</ul>
 
 	</nav>
-
+</div>
 
 	<div class="agendar">
 
@@ -91,8 +91,21 @@
 				
 			</fieldset><br/>
 			<center>
-			<input type="reset" value="Limpar" class="botao" />
-			<input type="submit" value="Enviar" class="botao" />
+				<input type="reset" value="Limpar" class="botao" />
+
+				<a href="#openModal"><input type="button" value="Cancelar" class="botao" /></a>
+
+				<div id="openModal" class="modalDialog">
+  					<div>
+    					<a href="#close" title="Close" class="close">X</a>
+    					<h2>Deseja cancelar seu cadastro?</h2>
+    					
+    					<a href="#"><input type="button" value="Não" class="botao"></a>
+    					<a href="file_main.html"><input type="button" value="Sim" class="botao"></a>
+  					</div>
+				</div>
+
+				<input type="submit" value="Enviar" class="botao" />
 			</center>
 	</div>
 		

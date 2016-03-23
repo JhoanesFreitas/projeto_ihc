@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	
+	<title>Cadastre-se</title>
+	<link rel="shortcut icon" href="drawable/logo.png">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+	<link rel="stylesheet" type="text/css" href="css/estilo_img.css"/>
+	<link rel="stylesheet" type="text/css" href="css/estilo_cont_main.css"/>
+
+	<!--[if lte IE 8]-->
+	<script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<!--[endif]-->
+
+</head>
+
+<body>
+<div class="cabecalho">
+	<nav>
+
+		<!--image logo localizada no canto superior esquerdo-->
+		<div class="drawable">
+			<a href="#">
+				<img src="drawable/logo.png" title="Home" width="250" height="50">
+			</a>
+		</div>
+
+		<!--menu-->
+		<ul class="menu">
+			<a href="file_main.html"><li>Home</li></a>
+			<a href="file_main.html#labelserv"><li>Nossos Serviços</li></a>
+			<li>Disponibilidade
+				<ul>
+					<a href="file_main.html#labelhorarios"><li>Horário de atendimento</li></a>
+					<a href="agendamento.html"><li>Marque um horário</li></a>
+				</ul>
+			</li>
+
+			<a href="file_products.html"><li>Produtos</li></a>
+			<a href="file_main.html#sobre"><li>Sobre</li></a>
+			<a href="#"><li>Entre</li></a>
+			<a href="#"><li>Cadastre-se</li></a>
+		</ul>
+
+	</nav>
+</div>
+	<div class="divCad">
+
+		<p class="cadTitulo"> Dados cadastrais </p>
+
+		<fieldset class="cadField">
+			
+			<label for="name">Nome completo: </label>
+			<input type="name" maxlength="100" size="20" />
+			<br/>
+
+			<label for="sexo">Sexo: </label>
+			<select name="sexo" id="sexo">
+				<option value="-1" selected="selected">Selecione</option>
+				<option value="fem">Feminino</option>
+				<option value="masc">Masculino</option>
+			</select>
+			<br/>
+
+			<label for="cpf">CPF: </label>
+			<input type="text" maxlength="14" size="15" />
+			<br/>
+
+			<label for="dataNascimento">Data de nascimento: </label>
+			<input type="text" name="diaNasc" maxlength=2 size=2 /> /<input type="text" name="mesNasc" maxlength=2 size=2 /> /<input type="text" name="anoNasc" maxlength=4 size=4 /> 
+			<br/>
+
+			<label for="telefone">Telefone: </label>
+			<input type="text" name="tel" maxlength=10 size=10 /> 
+			<br/>
+
+			<label for="telefone">Celular: </label>
+			<input type="text" name="cel" maxlength=10 size=10 /> 
+			<br/>
+
+			<label for="E-mail">E-mail: </label>
+			<input type="text" name="email" maxlength=50 size=20 /> 
+			<br/>
+
+			<label for="senha">Senha: </label>
+			<input type="text" name="senha" maxlength=10 size=20 /> 
+			<br/>
+
+			<label for="senha">Confirme sua senha: </label>
+			<input type="text" name="senha" maxlength=10 size=20 /> 
+
+		</fieldset>
+
+		<p class="cadTitulo"> Endereço de entrega </p>
+
+		<fieldset class="cadField">
+			
+			<label for="tipoEndereco">Tipo de endereço: </label>
+			<select name="end" id="end">
+				<option value="-1" selected="selected">Selecione</option>
+				<option value="casa">Casa</option>
+				<option value="apart">Apartamento</option>
+				<option value="comerc">Comercial</option>
+			</select>
+			<br/>
+
+			<label for="cep">CEP: </label>
+			<input type="text" name="cep1" id="cep1" maxlength=5 size=5 /> - <input type="text" name="cep2" id="cep2" maxlength=3 size=3 />
+			<br/>
+
+			<label for="endereco">Endereço: </label>
+			<input type="endereco" maxlength="50" size="20" />
+			<br/>
+
+			<label for="numero">Numero: </label>
+			<input type="text" name="numero" maxlength=10 size=10 /> 
+			<br/>
+
+			<label for="complemento">Complemento: </label>
+			<input type="text" name="comp" maxlength=50 size=20 /> 
+			<br/>
+
+			<label for="bairro">Bairro: </label>
+			<input type="text" name="bairro" maxlength=50 size=20 /> 
+			<br/>
+
+			<label for="cidade">Cidade: </label>
+			<input type="text" name="cidade" maxlength=50 size=20 /> 
+			<br/>
+
+		</fieldset>
+
+		<center>
+			<input type="reset" value="Limpar" class="botao" />
+
+				<a href="#openModal"><input type="button" value="Cancelar" class="botao" /></a>
+
+				<div id="openModal" class="modalDialog">
+  					<div>
+    					<a href="#close" title="Close" class="close">X</a>
+    					<h2>Deseja cancelar seu cadastro?</h2>
+    					
+    					<a href="#"><input type="button" value="Não" class="botao"></a>
+    					<a href="file_main.html"><input type="button" value="Sim" class="botao"></a>
+  					</div>
+				</div>
+
+				<input type="submit" value="Enviar" class="botao" />
+		</center>
+
+	</div>
+
+</body>
+
+</html>

@@ -22,10 +22,34 @@ a:link{
 	text-decoration: none;
 }
 
+/*Div que engloba imagem e menu*/
+.cabecalho{
+	z-index: 2;
+	width: 100%;
+	height: 9%;
+	border: none;
+	background: #800000;
+	position: fixed;
+}
+
+.nomeSalao{
+	margin-top: 1%;
+	margin-right: 0%;
+	margin-left: 0%;
+	width: 100.6%;
+	height: 15%;
+	border: none;
+	background-color: #FF7F50;
+	position: relative;
+	float: left;
+}
+
 /*Nome abaixo do menu*/
 .nome_salao{
+	padding: 0% 0% 4% 0%;
 	position: relative;
 	font-size: 340%;
+	color: #F0E68C;
 	text-align: center;
 	float: left;
 	margin: 7% 0px 0px 25%;
@@ -33,21 +57,37 @@ a:link{
 }
 
 /*alinhamento do texto nos parágrafos*/
+
+.home_init{
+	width: 95%;
+	top: 28px;
+	border: none;
+	margin-left: 0%;
+	background: #8B0000;
+}
+
 .home_init p{
-	position: relative;
+	color: #FFFFFF;
+	font-size: 20px;
+	font-family: Calibri;
+	float: left;
 	top: 30px;
 	text-align: justify;
+	padding: 1% 10% 0% 10%;
 }
 
 .home_products{
 
 	position: absolute;
-	margin:55% 0 0% 9%;
-	margin-right: 5%;
+	margin: 53% 0 0% 9%;
+	margin-right: 10%;
+	margin-left: 12%;
 	padding: 1%;
-	border: 1px solid #c0c0c0;	
+	border: 1px solid #800000;	
 	text-align: center;
 	overflow: auto;
+	background: #FFFFFF;
+	border-radius: 10px;
 }
 
 .home_products figure{
@@ -78,6 +118,16 @@ a:link{
 }
 
 /*Menu serviços*/
+
+.servicos{
+	width: 100.6%;
+	height: 10%;
+	background: #FFDAB9;
+	margin-top: 30%;
+	float: left;
+	 
+}
+
 .servicos p{
 	font-size: 30px;
 	text-align: justify;
@@ -96,6 +146,16 @@ a:link{
 
 
 /*Menu horarios*/
+
+.horarios{
+	width: 100.6%;
+	height: 10%;
+	background: #FFDAB9;
+	margin-top: -7%;
+	padding-top: 7%;
+	float: left;
+}
+
 .horarios p{
 	font-size: 35px;
 	position: relative;
@@ -114,7 +174,7 @@ a:link{
 
 .home_sobre{
 	position: relative;
-	margin: 10% 5% 2% 10%;
+	margin: 5% 5% 2% 10%;
 	padding: 14px;
 	float: left;
 	border: 1px solid #c0c0c0;	
@@ -196,13 +256,93 @@ a:link{
 }
 
 .botao{
-	font-size:20px;
-    font-family:Verdana,Helvetica;
-    font-weight:bold;
-    color:white;
-    background:#638cb5;
-    border:0px;
-    width:120px;
-    height:30px;
+	font-size: 20px;
+    font-family: Verdana,Helvetica;
+    font-weight: bold;
+    color: white;
+    background: #638cb5;
+    border: 0px;
+    width: 130px;
+    height: 40px;
     margin: 0px 3% 70px 3%;
+    text-align: center;
+}
+
+/*Cadastro*/
+
+.divCad{
+	top: 130px;
+	position: relative;
+}
+
+.cadTitulo{
+	position: relative;
+	font-size: 25px;
+	margin-left: 10%;
+	top: 30px;
+	margin-bottom: 5%;
+}
+
+.cadField{
+	margin: 20px 10% 20px 10%;
+
+}
+
+.cadField label, input, select{
+	margin: 15px 0px 5px 1%;
+	
+}
+
+/*Popup*/
+
+.modalDialog {
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+.modalDialog:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+.modalDialog > div {
+  width: 400px;
+  position: relative;
+  margin: 10% auto;
+  padding: 40px 20px 0px 20px;
+  border-radius: 10px;
+  background: #fff;
+  background: -moz-linear-gradient(#fff, #999);
+  background: -webkit-linear-gradient(#fff, #999);
+  background: -o-linear-gradient(#fff, #999);
+}
+.close {
+  background: #606061;
+  color: #FFFFFF;
+  line-height: 25px;
+  position: absolute;
+  right: -12px;
+  text-align: center;
+  top: -10px;
+  width: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  -moz-box-shadow: 1px 1px 3px #000;
+  -webkit-box-shadow: 1px 1px 3px #000;
+  box-shadow: 1px 1px 3px #000;
+}
+.close:hover {
+  background: #00d9ff;
 }
