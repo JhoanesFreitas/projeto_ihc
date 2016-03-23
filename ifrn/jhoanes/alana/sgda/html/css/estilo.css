@@ -14,7 +14,7 @@ body{
 
 /*configurações no menu como todo*/
 .menu{
-	z-index: 2;
+	z-index: 999;
 	margin-top: 0px;
 	list-style: none;
 	border: 10% solid #c0c0c0;
