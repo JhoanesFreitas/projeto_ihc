@@ -22,6 +22,16 @@ a:link{
 	text-decoration: none;
 }
 
+/*Div que engloba imagem e menu*/
+.cabecalho{
+	width: 100%;
+	height: 9%;
+	border: none;
+	background: #6A5ACD;
+	position: fixed;
+
+}
+
 /*Nome abaixo do menu*/
 .nome_salao{
 	position: relative;
