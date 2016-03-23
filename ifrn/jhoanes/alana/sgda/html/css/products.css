@@ -1,0 +1,21 @@
+.table_products table{
+	position: absolute;
+	margin-top: 15%;
+	margin-left: 15%;
+}
+
+.table_products table tr td figure a img{
+
+	width: 45%;
+	height: 20%;
+	margin: 13%;
+
+}
+
+.table_products figcaption{
+	position: relative;
+	text-align: center;
+	width: 120px;
+	height: 100px;
+	margin-left: 18%;
+}
