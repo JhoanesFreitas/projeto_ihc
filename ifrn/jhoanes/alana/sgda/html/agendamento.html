@@ -127,11 +127,33 @@
 
 				<a href="file_products.html"><li>Produtos</li></a>
 				<a href="file_main.html#sobre"><li>Sobre</li></a>
-				<a href="#"><li>Entre</li></a>
+				<a href="#openModal"><li>Entre</li></a>
 				<a href="cadastro.html"><li>Cadastre-se</li></a>
 			</ul>
 
 		</nav>
+
+		<div id="openModal" class="modalDialogEntrar">
+			<div>
+				<a href = "#close" title = "Close" class = "closePopupEntrar">X</a>
+				<h2>Entrar</h2>
+				<p>
+					<label>E-mail: </label>
+					<input type="username" class = "inputTextarea" placeholder="example@email.com" />
+				</p>
+				<p>
+					<label>Senha: </label>
+					<input type = "password" class = "inputTextarea" placeholder="alguma.senha" />
+				</p>
+				<a href="cadastro.html">
+					<input type = "button" value = "Cadastre-se" class = "botaoPopup">
+				</a>
+				<a href="#">
+					<input type = "button" value = "Entrar" class = "botaoPopup">
+				</a>
+			</div>
+		</div>
+
 	</div>
 	<div class="divAgendar">
 		<div class="agendar">
@@ -141,7 +163,7 @@
 
 					<p class="titulo">
 						<label for="name" >Nome completo: </label>
-						<input type="text" id="name1" onchange="habilitaBtn()" class="inputTextarea" placeholder="ex.: Maria Cristina da Silva" required="required"  /><!--oninvalid='return validate(event)'-->
+						<input type="text" id="name1" class="inputTextarea" placeholder="ex.: Maria Cristina da Silva" required="required"  /><!--oninvalid='return validate(event)' onchange="habilitaBtn()"-->
 					</p>
 
 					<p class="titulo">
