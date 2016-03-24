@@ -88,6 +88,10 @@ a:link{
 	float: left;
 }
 
+.divMainProducts table{
+	top: -8%;
+}
+
 .divFigure{
 	width: 65%;
 	border: 1px solid;
