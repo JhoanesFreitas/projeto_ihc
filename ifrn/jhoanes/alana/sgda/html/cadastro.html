@@ -20,6 +20,7 @@
 </head>
 
 <script language='JavaScript'>
+
 	function onlyNumbers(e){
 		var tecla=(window.event)?event.keyCode:e.which;   
 		if((tecla>47 && tecla<58)) return true;
@@ -88,7 +89,8 @@
 			<form>
 				<p class="titulo">
 					<label for="name">Nome completo: </label>
-					<input type="name" maxlength="100" size="20" placeholder="ex.: Maria Cristina" required="required" cols="60" />
+					<input type="name" id="name" maxlength="100" size="20" placeholder="ex.: Maria Cristina" required="required" cols="60"
+					 />
 					<label for="image">Foto: </label>
 					<input type="file" name="file" accept="image/*" required="required" />
 					<br/>
@@ -131,7 +133,7 @@
 
 				<p class="titulo">
 					<label for="E-mail">E-mail: </label>
-					<input type="text" name="email" maxlength=50 size=20 placeholder="exemple@email.com" required="required" cols="60" minlength="10"/> 
+					<input type="email" required="required" class="input-text" name="email" placeholder="example@email.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" /> 
 					<br/>
 				</p>
 

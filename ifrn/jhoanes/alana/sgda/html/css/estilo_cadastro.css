@@ -3,21 +3,21 @@ body{
 }
 
 .inputTextarea{
-  -webkit-transition: all 0.30s ease-in-out;
-  -moz-transition: all 0.30s ease-in-out;
-  -ms-transition: all 0.30s ease-in-out;
-  -o-transition: all 0.30s ease-in-out;
-  outline: none;
-  padding: 3px 0px 3px 3px;
-  margin: 5px 1px 3px 0px;
-  border: 1px solid #DDDDDD;
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;
+	padding: 3px 0px 3px 3px;
+	margin: 5px 1px 3px 0px;
+	border: 1px solid #DDDDDD;
 }
 .inputTextarea:focus
 {
-  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
-  padding: 3px 0px 3px 3px;
-  margin: 5px 1px 3px 0px;
-  border: 1px solid rgba(81, 203, 238, 1);	
+	box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+	padding: 3px 0px 3px 3px;
+	margin: 5px 1px 3px 0px;
+	border: 1px solid rgba(81, 203, 238, 1);	
 }
 
 .field {
@@ -45,15 +45,15 @@ body{
 
 .botao{
 	font-size: 20px;
-    font-family: Verdana,Helvetica;
-    font-weight: bold;
-    color: white;
-    background: #638cb5;
-    border: 0px;
-    width: 130px;
-    height: 40px;
-    margin: 0px 3% 70px 3%;
-    text-align: center;
+	font-family: Verdana,Helvetica;
+	font-weight: bold;
+	color: white;
+	background: #638cb5;
+	border: 0px;
+	width: 130px;
+	height: 40px;
+	margin: 0px 3% 70px 3%;
+	text-align: center;
 }
 
 /*Cadastro*/
@@ -82,4 +82,8 @@ body{
 .cadField form, label, input, select{
 	margin: 15px 0px 5px 1%;
 	
+}
+
+input:required:invalid {
+	animation-name: all;
 }

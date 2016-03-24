@@ -22,9 +22,58 @@
 	<script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<!--[endif]-->
 
+
 </head>
 
+<script>
+	$(document).ready(function() {
+
+		$("#text").keyup(function() {
+
+			if($("#text").val()==''){
+				$("#submit").attr("disabled", true);
+			}else{
+				$("#submit").attr("disabled", false);
+			}
+
+		});
+
+	});
+</script>
+
+<!--<script type="text/javascript">
+	
+	function habilitaBtn () {
+		var op = document.getElementById("name1").value;
+
+		if(op == '')
+		{
+			if(!document.getElementById('enviar').disabled) document.getElementById('enviar').disabled=true;
+		}
+
+		else if(op != "")
+		{
+			if(document.getElementById('enviar').disabled) document.getElementById('enviar').disabled=true;
+		}
+	}
+
+</script>-->
+
+
+
 <script language='JavaScript'>
+
+	function validate(e){
+		var campo = document.getElementById('name1');
+		campo.setCustomValidity("Ops! Você precisa preencher este campo!");
+		
+		/*if (true) {
+			return false;
+		}
+		return false;*/
+		
+	}
+
 	function onlyNumbers(e){
 		var tecla=(window.event)?event.keyCode:e.which;   
 		if((tecla>47 && tecla<58)) return true;
@@ -91,8 +140,8 @@
 				<fieldset class="field">
 
 					<p class="titulo">
-						<label for="name">Nome completo: </label>
-						<input type="name" class="inputTextarea" placeholder="ex.: Maria Cristina da Silva" required="required" />
+						<label for="name" >Nome completo: </label>
+						<input type="text" id="name1" onchange="habilitaBtn()" class="inputTextarea" placeholder="ex.: Maria Cristina da Silva" required="required"  /><!--oninvalid='return validate(event)'-->
 					</p>
 
 					<p class="titulo">
@@ -116,10 +165,10 @@
 
 						<label class="data" for=”dataAtend”> Data: </label>
 
-						<input type="date" name="date" maxlength=10 size=8 class="inputTextarea" placeholder="24/03/2016" required="required" pattern="[0-9]{2}\/[0-9]{2}\/[0-9]{4}$" min="2016-03-01" max="2016-12-18" onkeypress='return onlyNumbersAndSpecialCharsDate(event)'/>
+						<input type="date" name="date" maxlength=10 size=8 class="inputTextarea" placeholder="24/03/2016" required="required" pattern="[0-9]{2}\/[0-9]{2}\/[0-9]{4}$" min="2016-02-01" max="2016-12-18" onkeypress='return onlyNumbersAndSpecialCharsDate(event)'/>
 
 						<label class="hora" for="horaAtend"> Hora: </label>
-						<input type="text" id="hora" maxlength=5 size=10 class="inputTextarea" placeholder="16:30"required="required" name="hour" pattern="[0-9]{2}:[0-9]{2}$" onkeypress='return onlyNumbersAndSpecialCharsHour(event)' />
+						<input type="hour" id="hora" maxlength=5 size=10 class="inputTextarea" placeholder="16:30"required="required" name="hour" pattern="[0-9]{2}:[0-9]{2}$" onkeypress='return onlyNumbersAndSpecialCharsHour(event)' />
 					</p>
 
 				</fieldset><br/>
@@ -138,7 +187,7 @@
 						</div>
 					</div>
 
-					<input type="submit" value="Enviar" class="botao" />
+					<input type="submit" id="enviar" value="Enviar" class="botao" />
 				</center>
 			</form>
 		</div>
