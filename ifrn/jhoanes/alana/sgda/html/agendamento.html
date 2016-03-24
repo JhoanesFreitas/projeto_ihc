@@ -25,93 +25,96 @@
 </head>
 
 <body>
-<div class="cabecalho">
-	<nav>
+	<div class="cabecalho">
+		<nav>
 
-		<!--image logo localizada no canto superior esquerdo-->
-		<div class="drawable">
-			<a href="#">
-				<img src="drawable/logo.png" title="Home" width="250" height="50">
-			</a>
-		</div>
+			<!--image logo localizada no canto superior esquerdo-->
+			<div class="drawable">
+				<a href="#">
+					<img src="drawable/logo.png" title="Home" width="250" height="50">
+				</a>
+			</div>
 
-		<!--menu-->
-		<ul class="menu">
-			<a href="file_main.html"><li>Home</li></a>
-			<a href="file_main.html#labelserv"><li>Nossos Serviços</li></a>
-			<li>Disponibilidade
-				<ul>
-					<a href="file_main.html#labelhorarios"><li>Horário de atendimento</li></a>
-					<a href="agendamento.html"><li>Marque um horário</li></a>
-				</ul>
-			</li>
+			<!--menu-->
+			<ul class="menu">
+				<a href="file_main.html"><li>Home</li></a>
+				<a href="file_main.html#labelserv"><li>Nossos Serviços</li></a>
+				<li>Disponibilidade
+					<ul>
+						<a href="file_main.html#labelhorarios"><li>Horário de atendimento</li></a>
+						<a href="agendamento.html"><li>Marque um horário</li></a>
+					</ul>
+				</li>
 
-			<a href="file_products.html"><li>Produtos</li></a>
-			<a href="file_main.html#sobre"><li>Sobre</li></a>
-			<a href="#"><li>Entre</li></a>
-			<a href="cadastro.html"><li>Cadastre-se</li></a>
-		</ul>
+				<a href="file_products.html"><li>Produtos</li></a>
+				<a href="file_main.html#sobre"><li>Sobre</li></a>
+				<a href="#"><li>Entre</li></a>
+				<a href="cadastro.html"><li>Cadastre-se</li></a>
+			</ul>
 
-	</nav>
-</div>
-<div class="divAgendar">
-	<div class="agendar">
-
-		<form action="sucesso.html">
-			<fieldset class="field">
-
-				<p class="titulo">
-					<label for="name">Nome completo: </label>
-					<input type="name" class="inputTextarea" />
-				</p>
-
-				<p class="titulo">
-
-					<label for="tipoAtend">Tipo de atendimento: <br/><br/></label>
-					<input type="checkbox" value="cabelo" name="atend" margin="5px"/> Cabelo <br/>
-					<input type="checkbox" value="unhas" name="atend" /> Unhas <br/>
-					<input type="checkbox" value="pele" name="atend" /> Pele <br/>
-		
-				</p>
-
-				<p class="titulo">
-					
-					<label for=”detalheAtend”> O que você deseja? </label>
-					<p size="15px" top="100px">Detalhe o seu atendimento</p>
-					<textarea rows="10" cols="60" maxlength="500" class="inputTextarea"></textarea>
-				</p>
-
-				<p class="titulo">
-
-					<label class="data" for=”dataAtend”> Data: </label>
-					<input type="text" name="dataDia" id="dataDia" maxlength=2 size=2 class="inputTextarea"/> / <input type="text" name="dataMes" id="dataMes" maxlength=2 size=2 class="inputTextarea"/> / <input type="text" name="dataAno" id="dataAno" maxlength=4 size=4 class="inputTextarea"/>
-
-					<label class="hora" for="horaAtend"> Hora: </label>
-					<input type="text" name="hora" id="hora" maxlength=2 size=2 class="inputTextarea"/> : <input type="text" name="min" id="min" maxlength=2 size=2 class="inputTextarea"/>
-				</p>
-				
-			</fieldset><br/>
-			<center>
-				<input type="reset" value="Limpar" class="botao" />
-
-				<a href="#openModal"><input type="button" value="Cancelar" class="botao" /></a>
-
-				<div id="openModal" class="modalDialog">
-  					<div>
-    					<a href="#close" title="Close" class="close">X</a>
-    					<h2>Deseja cancelar seu cadastro?</h2>
-    					
-    					<a href="#"><input type="button" value="Não" class="botao"></a>
-    					<a href="file_main.html"><input type="button" value="Sim" class="botao"></a>
-  					</div>
-				</div>
-
-				<input type="submit" value="Enviar" class="botao" />
-			</center>
+		</nav>
 	</div>
-</form>
-</div>
-		
+	<div class="divAgendar">
+		<div class="agendar">
+
+			<form action="sucesso.html">
+				<fieldset class="field">
+
+					<p class="titulo">
+						<label for="name">Nome completo: </label>
+						<input type="name" class="inputTextarea" placeholder="ex.: Maria Cristina da Silva" />
+					</p>
+
+					<p class="titulo">
+
+						<label for="tipoAtend">Tipo de atendimento: <br/><br/></label>
+						<input type="checkbox" value="cabelo" name="atend" margin="5px"/> Cabelo <br/>
+						<input type="checkbox" value="unhas" name="atend" /> Unhas <br/>
+						<input type="checkbox" value="pele" name="atend" /> Pele <br/>
+
+					</p>
+
+					<p class="titulo">
+
+						<label for=”detalheAtend”> O que você deseja? </label>
+						<p size="15px" top="100px">Detalhe o seu atendimento</p>
+						<textarea rows="10" cols="60" maxlength="500" class="inputTextarea" placeholder="Exemplo de detalhamento...">
+						</textarea>
+					</p>
+
+					<p class="titulo">
+
+						<label class="data" for=”dataAtend”> Data: </label>
+						<input type="text" name="dataDia" id="dataDia" maxlength=2 size=2 class="inputTextarea" placeholder="24" /> /
+						<input type="text" name="dataMes" id="dataMes" maxlength=2 size=2 class="inputTextarea" placeholder="03" /> /
+						<input type="text" name="dataAno" id="dataAno" maxlength=4 size=4 class="inputTextarea" placeholder="2016" />
+
+						<label class="hora" for="horaAtend"> Hora: </label>
+						<input type="text" name="hora" id="hora" maxlength=2 size=2 class="inputTextarea" placeholder="16" /> : <input type="text" name="min" id="min" maxlength=2 size=2 class="inputTextarea" placeholder="30" />
+					</p>
+
+				</fieldset><br/>
+				<center>
+					<input type="reset" value="Limpar" class="botao" />
+
+					<a href="#openModal"><input type="button" value="Cancelar" class="botao" /></a>
+
+					<div id="openModal" class="modalDialog">
+						<div>
+							<a href="#close" title="Close" class="close">X</a>
+							<h2>Deseja cancelar seu cadastro?</h2>
+
+							<a href="#"><input type="button" value="Não" class="botao"></a>
+							<a href="file_main.html"><input type="button" value="Sim" class="botao"></a>
+						</div>
+					</div>
+
+					<input type="submit" value="Enviar" class="botao" />
+				</center>
+			</div>
+		</form>
+	</div>
+
 </body>
 
 
