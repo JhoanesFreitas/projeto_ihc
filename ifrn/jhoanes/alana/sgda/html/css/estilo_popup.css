@@ -91,6 +91,7 @@
 
 .modalDialogEntrar h2{
     margin-left: 30%;
+    margin-top: 5%;
 }
 
 .modalDialogEntrar p{
@@ -100,12 +101,14 @@
 .closePopupEntrar{
     background: #606061;
     color: #FFFFFF;
-    line-height: 1px;
+    line-height: 20px;
+    z-index: 99999;
     position: absolute;
-    right: -97%;
+    right: -3%;
     text-align: center;
-    top: -60px;
-    width: -4%;
+    top: -3%;
+    width: 6.5%;
+    height: 6.5%;
     text-decoration: none;
     font-weight: bold;
     -webkit-border-radius: 17px;
@@ -132,7 +135,12 @@
     width: 130px;
     height: 40px;
     text-align: center;
-    margin-top: 0px;
-    margin-bottom: -5%;
-    margin-left: 20%
+    margin-top: 10%;
+    margin-bottom: 5%;
+    margin-right: 15%;
+    margin-left: -5%
+}
+
+.botaoPopup:hover{
+	background: #606061;
 }
