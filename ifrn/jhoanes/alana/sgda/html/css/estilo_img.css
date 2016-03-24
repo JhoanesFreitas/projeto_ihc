@@ -14,3 +14,9 @@
 	margin: 0px 0px 20px 40px;	
 	position: fixed;
 }
+
+.divFigure figure a img{
+	min-width: 110%;
+    position: relative;
+    left: -13%;
+}
