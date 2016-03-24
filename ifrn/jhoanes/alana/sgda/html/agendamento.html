@@ -24,6 +24,17 @@
 
 </head>
 
+<script language='JavaScript'>
+	function SomenteNumero(e){
+		var tecla=(window.event)?event.keyCode:e.which;   
+		if((tecla>47 && tecla<58)) return true;
+		else{
+			if (tecla==8 || tecla==0) return true;
+			else  return false;
+		}
+	}
+</script>
+
 <body>
 	<div class="cabecalho">
 		<nav>
@@ -62,7 +73,7 @@
 
 					<p class="titulo">
 						<label for="name">Nome completo: </label>
-						<input type="name" class="inputTextarea" placeholder="ex.: Maria Cristina da Silva" />
+						<input type="name" class="inputTextarea" placeholder="ex.: Maria Cristina da Silva" required="required" />
 					</p>
 
 					<p class="titulo">
@@ -78,19 +89,20 @@
 
 						<label for=”detalheAtend”> O que você deseja? </label>
 						<p size="15px" top="100px">Detalhe o seu atendimento</p>
-						<textarea rows="10" cols="60" maxlength="500" class="inputTextarea" placeholder="Exemplo de detalhamento...">
+						<textarea rows="10" cols="60" maxlength="500" class="inputTextarea" placeholder="Exemplo de detalhamento..." required="required">
 						</textarea>
 					</p>
 
 					<p class="titulo">
 
 						<label class="data" for=”dataAtend”> Data: </label>
-						<input type="text" name="dataDia" id="dataDia" maxlength=2 size=2 class="inputTextarea" placeholder="24" /> /
-						<input type="text" name="dataMes" id="dataMes" maxlength=2 size=2 class="inputTextarea" placeholder="03" /> /
-						<input type="text" name="dataAno" id="dataAno" maxlength=4 size=4 class="inputTextarea" placeholder="2016" />
+						<input type="text" name="dataDia" id="dataDia" maxlength=2 size=2 class="inputTextarea" placeholder="24" required="required" onkeypress='return SomenteNumero(event)'/> /
+						<input type="text" name="dataMes" id="dataMes" maxlength=2 size=2 class="inputTextarea" placeholder="03" required="required" onkeypress='return SomenteNumero(event)'/> /
+						<input type="text" name="dataAno" id="dataAno" maxlength=4 size=4 class="inputTextarea" placeholder="2016" required="required" onkeypress='return SomenteNumero(event)'/>
 
 						<label class="hora" for="horaAtend"> Hora: </label>
-						<input type="text" name="hora" id="hora" maxlength=2 size=2 class="inputTextarea" placeholder="16" /> : <input type="text" name="min" id="min" maxlength=2 size=2 class="inputTextarea" placeholder="30" />
+						<input type="text" name="hora" id="hora" maxlength=2 size=2 class="inputTextarea" placeholder="16"required="required" onkeypress='return SomenteNumero(event)' /> : <input type="text" name="min" id="min" maxlength=2 size=2 class="inputTextarea" placeholder="30" required="required" 
+						onkeypress='return SomenteNumero(event)'/>
 					</p>
 
 				</fieldset><br/>
@@ -114,7 +126,6 @@
 			</div>
 		</form>
 	</div>
-
 </body>
 
 
