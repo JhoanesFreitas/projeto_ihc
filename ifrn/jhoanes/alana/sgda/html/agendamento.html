@@ -33,6 +33,25 @@
 			else  return false;
 		}
 	}
+
+	function onlyNumbersAndSpecialCharsDate(e){
+		var tecla=(window.event)?event.keyCode:e.which;   
+		if((tecla>=47 && tecla<58)) return true;
+		else{
+			if (tecla==8 || tecla==0) return true;
+			else  return false;
+		}
+	}
+
+	function onlyNumbersAndSpecialCharsHour(e){
+		var tecla=(window.event)?event.keyCode:e.which;   
+		if((tecla>47 && tecla<=58)) return true;
+		else{
+			if (tecla==8 || tecla==0) return true;
+			else  return false;
+		}
+	}
+
 </script>
 
 <body>
@@ -96,13 +115,11 @@
 					<p class="titulo">
 
 						<label class="data" for=”dataAtend”> Data: </label>
-						<input type="text" name="dataDia" id="dataDia" maxlength=2 size=2 class="inputTextarea" placeholder="24" required="required" onkeypress='return onlyNumbers(event)'/> /
-						<input type="text" name="dataMes" id="dataMes" maxlength=2 size=2 class="inputTextarea" placeholder="03" required="required" onkeypress='return onlyNumbers(event)'/> /
-						<input type="text" name="dataAno" id="dataAno" maxlength=4 size=4 class="inputTextarea" placeholder="2016" required="required" onkeypress='return onlyNumbers(event)'/>
+
+						<input type="date" name="date" maxlength=10 size=8 class="inputTextarea" placeholder="24/03/2016" required="required" pattern="[0-9]{2}\/[0-9]{2}\/[0-9]{4}$" min="2016-03-01" max="2016-12-18" onkeypress='return onlyNumbersAndSpecialCharsDate(event)'/>
 
 						<label class="hora" for="horaAtend"> Hora: </label>
-						<input type="text" name="hora" id="hora" maxlength=2 size=2 class="inputTextarea" placeholder="16"required="required" onkeypress='return onlyNumbers(event)' /> : <input type="text" name="min" id="min" maxlength=2 size=2 class="inputTextarea" placeholder="30" required="required" 
-						onkeypress='return onlyNumbers(event)'/>
+						<input type="text" id="hora" maxlength=5 size=10 class="inputTextarea" placeholder="16:30"required="required" name="hour" pattern="[0-9]{2}:[0-9]{2}$" onkeypress='return onlyNumbersAndSpecialCharsHour(event)' />
 					</p>
 
 				</fieldset><br/>
@@ -123,8 +140,8 @@
 
 					<input type="submit" value="Enviar" class="botao" />
 				</center>
-			</div>
-		</form>
+			</form>
+		</div>
 	</div>
 </body>
 

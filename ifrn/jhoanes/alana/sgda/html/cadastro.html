@@ -11,6 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="css/estilo_img.css"/>
 	<link rel="stylesheet" type="text/css" href="css/estilo_cont_main.css"/>
 	<link rel="stylesheet" type="text/css" href="css/estilo_popup.css">
+	<link rel="stylesheet" type="text/css" href="css/estilo_cadastro.css">
 
 	<!--[if lte IE 8]-->
 	<script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -27,6 +28,25 @@
 			else  return false;
 		}
 	}
+
+	function onlyNumbersAndSpecialCharsDate(e){
+		var tecla=(window.event)?event.keyCode:e.which;   
+		if((tecla>=47 && tecla<58)) return true;
+		else{
+			if (tecla==8 || tecla==0) return true;
+			else  return false;
+		}
+	}
+
+	function onlyNumbersAndSpecialCharsHour(e){
+		var tecla=(window.event)?event.keyCode:e.which;   
+		if((tecla>47 && tecla<=58)) return true;
+		else{
+			if (tecla==8 || tecla==0) return true;
+			else  return false;
+		}
+	}
+
 </script>
 
 <body>
@@ -64,109 +84,141 @@
 		<p class="cadTitulo"> Dados cadastrais </p>
 
 		<fieldset class="cadField">
-			
-			<label for="name">Nome completo: </label>
-			<input type="name" maxlength="100" size="20" placeholder="ex.: Maria Cristina" required="required" cols="60" />
-			<br/>
 
-			<label for="sexo">Sexo: </label>
-			<select name="sexo" id="sexo">
-				<option value="-1" selected="selected">Selecione</option>
-				<option value="fem">Feminino</option>
-				<option value="masc">Masculino</option>
-			</select>
-			<br/>
+			<form>
+				<p class="titulo">
+					<label for="name">Nome completo: </label>
+					<input type="name" maxlength="100" size="20" placeholder="ex.: Maria Cristina" required="required" cols="60" />
+					<label for="image">Foto: </label>
+					<input type="file" name="file" accept="image/*" required="required" />
+					<br/>
+				</p>
 
-			<label for="cpf">CPF: </label>
-			<input type="text" maxlength="11" size="15" onkeypress='return onlyNumbers(event)' 
-				placeholder="ex.: 99999999999" required="required" cols="60"/>
-			<br/>
+				<p class="titulo">
+					<label for="sexo">Sexo: </label>
+					<select name="sexo" id="sexo">
+						<option value="-1" selected="selected">Selecione</option>
+						<option value="fem">Feminino</option>
+						<option value="masc">Masculino</option>
+					</select>
+					<br/>
+				</p>
 
-			<label for="dataNascimento">Data de nascimento: </label>
-			<input type="text" name="diaNasc" maxlength=2 size=2 onkeypress='return onlyNumbers(event)' placeholder="24" /> /
-			<input type="text" name="mesNasc" maxlength=2 size=2 onkeypress='return onlyNumbers(event)' placeholder="03" /> /
-			<input type="text" name="anoNasc" maxlength=4 size=4 onkeypress='return onlyNumbers(event)' placeholder="1990" /> 
-			<br/>
+				<p class="titulo">
+					<label for="cpf">CPF: </label>
+					<input type="text" maxlength="11" size="15" onkeypress='return onlyNumbers(event)' 
+					placeholder="ex.: 99999999999" required="required" cols="60" minlength="11" />
+					<br/>
+				</p>
 
-			<label for="telefone">Telefone: </label>
-			<input type="text" name="tel" maxlength=11 size=15 onkeypress='return onlyNumbers(event)' placeholder="ex.: 8433333333" required="required" cols="60"/> 
-			<br/>
+				<p class="titulo">
+					<label for="dataNascimento">Data de nascimento: </label>
+					<input type="date" name="date" maxlength=10 size=9 class="inputTextarea" placeholder="24/03/2016" required="required" pattern="[0-9]{2}\/[0-9]{2}\/[0-9]{4}$" min="2016-03-01" max="2016-12-18" onkeypress='return onlyNumbersAndSpecialCharsDate(event)'/>
+					<br/>
+				</p>
 
-			<label for="telefone">Celular: </label>
-			<input type="text" name="cel" maxlength=11 size=15 onkeypress='return onlyNumbers(event)' placeholder="ex.: 84999999999"/> 
-			<br/>
+				<p class="titulo">
+					<label for="telefone">Telefone: </label>
+					<input type="text" name="tel" maxlength=11 size=15 onkeypress='return onlyNumbers(event)' placeholder="ex.: 8433333333" required="required" cols="60" minlength="10"/> 
+					<br/>
+				</p>
 
-			<label for="E-mail">E-mail: </label>
-			<input type="text" name="email" maxlength=50 size=20 placeholder="exemple@email.com" required="required" cols="60"/> 
-			<br/>
+				<p class="titulo">
+					<label for="telefone">Celular: </label>
+					<input type="text" name="cel" maxlength=11 size=15 onkeypress='return onlyNumbers(event)' placeholder="ex.: 84999999999" minlength="11"/> 
+					<br/>
+				</p>
 
-			<label for="senha">Senha: </label>
-			<input type="password" name="senha" maxlength=10 size=20 placeholder="********" required="required" cols="60"/> 
-			<br/>
+				<p class="titulo">
+					<label for="E-mail">E-mail: </label>
+					<input type="text" name="email" maxlength=50 size=20 placeholder="exemple@email.com" required="required" cols="60" minlength="10"/> 
+					<br/>
+				</p>
 
-			<label for="senha">Confirme sua senha: </label>
-			<input type="password" name="senha" maxlength=10 size=20 placeholder="********" required="required" cols="60"/> 
+				<p class="titulo">
+					<label for="senha">Senha: </label>
+					<input type="password" name="senha" maxlength=10 size=20 placeholder="********" required="required" name="Senha" cols="60" minlength="6"/> 
+					<br/>
+				</p>
 
-		</fieldset>
+				<p class="titulo">
+					<label for="senha">Confirme sua senha: </label>
+					<input type="password" name="senha" maxlength=10 size=20 placeholder="********" required="required" cols="60"/> 
+				</p>
+			</fieldset>
 
-		<p class="cadTitulo"> Endereço de entrega </p>
+			<p class="cadTitulo"> Endereço de entrega </p>
 
-		<fieldset class="cadField">
-			
-			<label for="tipoEndereco">Tipo de endereço: </label>
-			<select name="end" id="end">
-				<option value="-1" selected="selected">Selecione</option>
-				<option value="casa">Casa</option>
-				<option value="apart">Apartamento</option>
-				<option value="comerc">Comercial</option>
-			</select>
-			<br/>
+			<fieldset class="cadField">
 
-			<label for="cep">CEP: </label>
-			<input type="text" name="cep1" id="cep1" maxlength=5 size=5 onkeypress='return onlyNumbers(event)' placeholder="00000" required="required" cols="60"/> - 
-			<input type="text" name="cep2" id="cep2" maxlength=3 size=3 onkeypress='return onlyNumbers(event)' placeholder="000" required="required" cols="60"/>
-			<br/>
+				<p class="titulo">
+					<label for="tipoEndereco">Tipo de endereço: </label>
+					<select name="end" id="end">
+						<option value="-1" selected="selected">Selecione</option>
+						<option value="casa">Casa</option>
+						<option value="apart">Apartamento</option>
+						<option value="comerc">Comercial</option>
+					</select>
+					<br/>
+				</p>
 
-			<label for="endereco">Endereço: </label>
-			<input type="endereco" maxlength="50" size="20" required="required" cols="60"/>
-			<br/>
+				<p class="titulo">
+					<label for="cep">CEP: </label>
+					<input type="text" name="cep1" id="cep1" maxlength=5 size=5 onkeypress='return onlyNumbers(event)' placeholder="00000" required="required" cols="60"/> - 
+					<input type="text" name="cep2" id="cep2" maxlength=3 size=3 onkeypress='return onlyNumbers(event)' placeholder="000" required="required" cols="60"/>
+					<br/>
+				</p>
 
-			<label for="numero">Numero: </label>
-			<input type="text" name="numero" maxlength=10 size=10 required="required" cols="60"/> 
-			<br/>
+				<p class="titulo">
+					<label for="endereco">Endereço: </label>
+					<input type="endereco" maxlength="50" size="20" required="required" cols="60" placeholder="ex.: Av. Prudente de Morais" />
+					<br/>
+				</p>
 
-			<label for="complemento">Complemento: </label>
-			<input type="text" name="comp" maxlength=50 size=20 required="required"  cols="60"/> 
-			<br/>
+				<p class="titulo">
+					<label for="numero">Numero: </label>
+					<input type="text" name="numero" maxlength=10 size=10 required="required" cols="60" placeholder="ex.: 96" /> 
+					<br/>
+				</p>
 
-			<label for="bairro">Bairro: </label>
-			<input type="text" name="bairro" maxlength=50 size=20 required="required" cols="60"/> 
-			<br/>
+				<p class="titulo">
+					<label for="complemento">Complemento: </label>
+					<input type="text" name="comp" maxlength=50 size=20 required="required"  cols="60" placeholder="ex.: Casa" /> 
+					<br/>
+				</p>
 
-			<label for="cidade">Cidade: </label>
-			<input type="text" name="cidade" maxlength=50 size=20 required="required" cols="60"/> 
-			<br/>
+				<p class="titulo">
+					<label for="bairro">Bairro: </label>
+					<input type="text" name="bairro" maxlength=50 size=20 required="required" cols="60" placeholder="ex.: Centro" />
+					<br/>
+				</p>
 
-		</fieldset>
+				<p class="titulo">
+					<label for="cidade">Cidade: </label>
+					<input type="text" name="cidade" maxlength=50 size=20 required="required" cols="60" placeholder="ex.: Rodolfo Fernandes/RN" /> 
+					<br/>
+				</p>
 
-		<center>
-			<input type="reset" value="Limpar" class="botao" />
+			</fieldset>
 
-			<a href="#openModal"><input type="button" value="Cancelar" class="botao" /></a>
+			<center>
+				<input type="reset" value="Limpar" class="botao" />
 
-			<div id="openModal" class="modalDialog">
-				<div>
-					<a href="#close" title="Close" class="close">X</a>
-					<h2>Deseja cancelar seu cadastro?</h2>
+				<a href="#openModal"><input type="button" value="Cancelar" class="botao" /></a>
 
-					<a href="#"><input type="button" value="Não" class="botao"></a>
-					<a href="file_main.html"><input type="button" value="Sim" class="botao"></a>
+				<div id="openModal" class="modalDialog">
+					<div>
+						<a href="#close" title="Close" class="close">X</a>
+						<h2>Deseja cancelar seu cadastro?</h2>
+
+						<a href="#"><input type="button" value="Não" class="botao"></a>
+						<a href="file_main.html"><input type="button" value="Sim" class="botao"></a>
+					</div>
 				</div>
-			</div>
 
-			<input type="submit" value="Enviar" class="botao" />
-		</center>
-
+				<input type="submit" value="Enviar" class="botao" />
+			</center>
+		</form>
 	</div>
 
 </body>
