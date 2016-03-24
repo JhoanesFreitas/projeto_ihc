@@ -6,6 +6,8 @@
 
 .home_init{
 	position: absolute;
+	width: 100%;
+	height: 80%;
 	margin:14% 10% 0 22%;
 	padding: 30px;
 	padding-top: 5px;
@@ -34,7 +36,7 @@ a:link{
 }
 
 .nomeSalao{
-	margin-top: 1%;
+	margin-top: 0%;
 	margin-right: 0%;
 	margin-left: 0%;
 	width: 100.6%;
@@ -47,13 +49,15 @@ a:link{
 
 /*Nome abaixo do menu*/
 .nome_salao{
+	width: 100%;
+	height: 10%;
 	padding: 0% 0% 4% 0%;
 	position: relative;
 	font-size: 340%;
 	color: #F0E68C;
 	text-align: center;
 	float: left;
-	margin: 7% 0px 0px 25%;
+	margin: 7% 0px 0px 0%;
 	letter-spacing: 20px;
 }
 
@@ -61,7 +65,7 @@ a:link{
 
 .home_init{
 	width: 95%;
-	top: 28px;
+	top: 0%;
 	border: none;
 	margin-left: 0%;
 	background: #8B0000;
@@ -69,7 +73,7 @@ a:link{
 
 .home_init p{
 	color: #FFFFFF;
-	font-size: 20px;
+	font-size: 140%;
 	font-family: Calibri;
 	float: left;
 	top: 30px;
