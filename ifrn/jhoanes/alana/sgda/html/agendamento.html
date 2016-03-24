@@ -25,7 +25,7 @@
 </head>
 
 <script language='JavaScript'>
-	function SomenteNumero(e){
+	function onlyNumbers(e){
 		var tecla=(window.event)?event.keyCode:e.which;   
 		if((tecla>47 && tecla<58)) return true;
 		else{
@@ -96,13 +96,13 @@
 					<p class="titulo">
 
 						<label class="data" for=”dataAtend”> Data: </label>
-						<input type="text" name="dataDia" id="dataDia" maxlength=2 size=2 class="inputTextarea" placeholder="24" required="required" onkeypress='return SomenteNumero(event)'/> /
-						<input type="text" name="dataMes" id="dataMes" maxlength=2 size=2 class="inputTextarea" placeholder="03" required="required" onkeypress='return SomenteNumero(event)'/> /
-						<input type="text" name="dataAno" id="dataAno" maxlength=4 size=4 class="inputTextarea" placeholder="2016" required="required" onkeypress='return SomenteNumero(event)'/>
+						<input type="text" name="dataDia" id="dataDia" maxlength=2 size=2 class="inputTextarea" placeholder="24" required="required" onkeypress='return onlyNumbers(event)'/> /
+						<input type="text" name="dataMes" id="dataMes" maxlength=2 size=2 class="inputTextarea" placeholder="03" required="required" onkeypress='return onlyNumbers(event)'/> /
+						<input type="text" name="dataAno" id="dataAno" maxlength=4 size=4 class="inputTextarea" placeholder="2016" required="required" onkeypress='return onlyNumbers(event)'/>
 
 						<label class="hora" for="horaAtend"> Hora: </label>
-						<input type="text" name="hora" id="hora" maxlength=2 size=2 class="inputTextarea" placeholder="16"required="required" onkeypress='return SomenteNumero(event)' /> : <input type="text" name="min" id="min" maxlength=2 size=2 class="inputTextarea" placeholder="30" required="required" 
-						onkeypress='return SomenteNumero(event)'/>
+						<input type="text" name="hora" id="hora" maxlength=2 size=2 class="inputTextarea" placeholder="16"required="required" onkeypress='return onlyNumbers(event)' /> : <input type="text" name="min" id="min" maxlength=2 size=2 class="inputTextarea" placeholder="30" required="required" 
+						onkeypress='return onlyNumbers(event)'/>
 					</p>
 
 				</fieldset><br/>
