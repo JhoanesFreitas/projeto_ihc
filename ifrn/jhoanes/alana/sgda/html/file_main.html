@@ -21,6 +21,7 @@
 	<!--[if lte IE 8]-->
 	<script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<!--[endif]-->
+	<script src="script_popup.js"></script>
 
 </head>
 
@@ -55,7 +56,7 @@
 
 		</nav>
 
-		<div id="openModal" class="modalDialogEntrar">
+		<div id="openModal" class="modalDialogEntrar" onkeydown="getKeyPress()">
 			<div>
 				<a href = "#close" title = "Close" class = "closePopupEntrar">X</a>
 				<h2>Entrar</h2>
