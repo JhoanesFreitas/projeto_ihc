@@ -1,5 +1,3 @@
-<script type="text/javascript">
-
 var EXIT = 27;
 
 var ENTER = 13;
@@ -28,5 +26,3 @@ function systemExit(){
 		window.close();
 	}
 }
-
-</script>
