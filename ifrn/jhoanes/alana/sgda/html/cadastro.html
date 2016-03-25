@@ -50,6 +50,18 @@
 
 </script>
 
+<!--Script para verificar se os campos estão preenchidos para poder mostrar mensagem de sucesso-->
+<script language='javascript' type="text/javascript">
+
+	function valida()
+	{
+		if (form1.txtIndice.value == ""){
+			alert("Agendamento realizado com sucesso!");
+			return true;
+		}	
+	}
+</script>
+
 <body>
 	<div class="cabecalho">
 		<nav>
@@ -86,12 +98,12 @@
 
 		<fieldset class="cadField">
 
-			<form>
+			<form name="form1" onsubmit="return valida();">
 				<p class="titulo">
 					<label for="name">* Nome completo: </label>
-					<input type="name" id="name" maxlength="100" size="20" placeholder="ex.: Maria Cristina" required="required" cols="60" class="inputTextarea"/>
+					<input type="name" id="name" maxlength="100" size="20" placeholder="ex.: Maria Cristina" required="required" cols="60" class="inputTextarea" name="txtIndice"/>
 					<label for="image">* Foto: </label>
-					<input type="file" name="file" accept="image/*" required="required" />
+					<input type="file" name="txtIndice" accept="image/*" required="required" />
 					<br/>
 				</p>
 
@@ -108,43 +120,43 @@
 				<p class="titulo">
 					<label for="cpf">* CPF: </label>
 					<input type="text" maxlength="11" size="15" onkeypress='return onlyNumbers(event)' 
-					placeholder="ex.: 99999999999" required="required" cols="60" minlength="11" class="inputTextarea"/>
+					placeholder="ex.: 99999999999" required="required" cols="60" minlength="11" class="inputTextarea" name="txtIndice"/>
 					<br/>
 				</p>
 
 				<p class="titulo">
 					<label for="dataNascimento">* Data de nascimento: </label>
-					<input type="date" name="date" maxlength=10 size=9 class="inputTextarea" placeholder="24/03/2016" required="required" pattern="[0-9]{2}\/[0-9]{2}\/[0-9]{4}$" min="2016-03-01" max="2016-12-18" onkeypress='return onlyNumbersAndSpecialCharsDate(event)'/>
+					<input type="date" name="txtIndice" maxlength=10 size=9 class="inputTextarea" placeholder="24/03/2016" required="required" pattern="[0-9]{2}\/[0-9]{2}\/[0-9]{4}$" min="2016-03-01" max="2016-12-18" onkeypress='return onlyNumbersAndSpecialCharsDate(event)'/>
 					<br/>
 				</p>
 
 				<p class="titulo">
 					<label for="telefone">* Telefone: </label>
-					<input type="text" name="tel" maxlength=11 size=15 onkeypress='return onlyNumbers(event)' placeholder="ex.: 8433333333" required="required" cols="60" minlength="10" class="inputTextarea"/> 
+					<input type="text" name="txtIndice" maxlength=11 size=15 onkeypress='return onlyNumbers(event)' placeholder="ex.: 8433333333" required="required" cols="60" minlength="10" class="inputTextarea"/> 
 					<br/>
 				</p>
 
 				<p class="titulo">
 					<label for="telefone">Celular: </label>
-					<input type="text" name="cel" maxlength=11 size=15 onkeypress='return onlyNumbers(event)' placeholder="ex.: 84999999999" minlength="11" class="inputTextarea"/> 
+					<input type="text" name="txtIndice" maxlength=11 size=15 onkeypress='return onlyNumbers(event)' placeholder="ex.: 84999999999" minlength="11" class="inputTextarea"/> 
 					<br/>
 				</p>
 
 				<p class="titulo">
 					<label for="E-mail">* E-mail: </label>
-					<input type="email" required="required" class="inputTextarea" name="email" placeholder="example@email.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" /> 
+					<input type="email" required="required" class="inputTextarea" name="txtIndice" placeholder="example@email.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" /> 
 					<br/>
 				</p>
 
 				<p class="titulo">
 					<label for="senha">* Senha: </label>
-					<input type="password" name="senha" maxlength=10 size=20 placeholder="********" required="required" name="Senha" cols="60" minlength="6" class="inputTextarea"/> 
+					<input type="password" name="txtIndice" maxlength=10 size=20 placeholder="********" required="required" name="Senha" cols="60" minlength="6" class="inputTextarea"/> 
 					<br/>
 				</p>
 
 				<p class="titulo">
 					<label for="senha">* Confirme sua senha: </label>
-					<input type="password" name="senha" maxlength=10 size=20 placeholder="********" required="required" cols="60" class="inputTextarea"/> 
+					<input type="password" name="txtIndice" maxlength=10 size=20 placeholder="********" required="required" cols="60" class="inputTextarea"/> 
 				</p>
 			</fieldset>
 
@@ -165,38 +177,38 @@
 
 				<p class="titulo">
 					<label for="cep">* CEP: </label>
-					<input type="text" name="cep1" id="cep1" maxlength=5 size=5 onkeypress='return onlyNumbers(event)' placeholder="00000" required="required" cols="60" class="inputTextarea"/> - 
-					<input type="text" name="cep2" id="cep2" maxlength=3 size=3 onkeypress='return onlyNumbers(event)' placeholder="000" required="required" cols="60" class="inputTextarea"/>
+					<input type="text" name="txtIndice" id="cep1" maxlength=5 size=5 onkeypress='return onlyNumbers(event)' placeholder="00000" required="required" cols="60" class="inputTextarea"/> - 
+					<input type="text" name="txtIndice" id="cep2" maxlength=3 size=3 onkeypress='return onlyNumbers(event)' placeholder="000" required="required" cols="60" class="inputTextarea"/>
 					<br/>
 				</p>
 
 				<p class="titulo">
 					<label for="endereco">* Endereço: </label>
-					<input type="endereco" maxlength="50" size="20" required="required" cols="60" placeholder="ex.: Av. Prudente de Morais" class="inputTextarea"/>
+					<input type="endereco" name="txtIndice" maxlength="50" size="20" required="required" cols="60" placeholder="ex.: Av. Prudente de Morais" class="inputTextarea"/>
 					<br/>
 				</p>
 
 				<p class="titulo">
 					<label for="numero">* Numero: </label>
-					<input type="text" name="numero" maxlength=10 size=10 required="required" cols="60" placeholder="ex.: 96" class="inputTextarea"/> 
+					<input type="text" name="txtIndice" maxlength=10 size=10 required="required" cols="60" placeholder="ex.: 96" class="inputTextarea"/> 
 					<br/>
 				</p>
 
 				<p class="titulo">
 					<label for="complemento">* Complemento: </label>
-					<input type="text" name="comp" maxlength=50 size=20 required="required"  cols="60" placeholder="ex.: Casa" class="inputTextarea"/> 
+					<input type="text" name="txtIndice" maxlength=50 size=20 required="required"  cols="60" placeholder="ex.: Casa" class="inputTextarea"/> 
 					<br/>
 				</p>
 
 				<p class="titulo">
 					<label for="bairro">* Bairro: </label>
-					<input type="text" name="bairro" maxlength=50 size=20 required="required" cols="60" placeholder="ex.: Centro" class="inputTextarea"/>
+					<input type="text" name="txtIndice" maxlength=50 size=20 required="required" cols="60" placeholder="ex.: Centro" class="inputTextarea"/>
 					<br/>
 				</p>
 
 				<p class="titulo">
 					<label for="cidade">* Cidade: </label>
-					<input type="text" name="cidade" maxlength=50 size=20 required="required" cols="60" placeholder="ex.: Rodolfo Fernandes/RN" class="inputTextarea"/> 
+					<input type="text" name="txtIndice" maxlength=50 size=20 required="required" cols="60" placeholder="ex.: Rodolfo Fernandes/RN" class="inputTextarea"/> 
 					<br/>
 				</p>
 

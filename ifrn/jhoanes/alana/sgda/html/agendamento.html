@@ -17,6 +17,7 @@
 	<link rel="stylesheet" type="text/css" href="css/estilo_img.css"/>
 	<link rel="stylesheet" type="text/css" href="css/estilo_cont_main.css"/>
 	<link rel="stylesheet" type="text/css" href="css/estilo_popup.css">
+	<link rel="stylesheet" type="text/css" href="css/estilo_cadastro.css">
 
 	<!--[if lte IE 8]-->
 	<script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -61,7 +62,7 @@
 
 
 
-<script language='JavaScript'>
+<script language='JavaScript' type="text/javascript">
 
 	function validate(e){
 		var campo = document.getElementById('name1');
@@ -102,115 +103,133 @@
 	}
 
 </script>
+<!--Script para verificar se os campos estão preenchidos para poder mostrar mensagem de sucesso-->
+<script language='javascript' type="text/javascript">
+
+	function valida()
+	{
+		if (form1.txtIndice.value == ""){
+			alert("Agendamento realizado com sucesso!");
+			return true;
+		}	
+	}
+</script>
 
 <body>
-	<div class="cabecalho">
-		<nav>
+	<div class="container">
+		<div class="cabecalho">
+			<nav>
 
-			<!--image logo localizada no canto superior esquerdo-->
-			<div class="drawable">
-				<a href="#">
-					<img src="drawable/logo.png" title="Home" width="250" height="50">
-				</a>
+				<!--image logo localizada no canto superior esquerdo-->
+				<div class="drawable">
+					<a href="#">
+						<img src="drawable/logo.png" title="Home" width="250" height="50">
+					</a>
+				</div>
+
+				<!--menu-->
+				<ul class="menu">
+					<a href="file_main.html"><li>Home</li></a>
+					<a href="file_main.html#labelserv"><li>Nossos Serviços</li></a>
+					<li>Disponibilidade
+						<ul>
+							<a href="file_main.html#labelhorarios"><li>Horário de atendimento</li></a>
+							<a href="agendamento.html"><li>Marque um horário</li></a>
+						</ul>
+					</li>
+
+					<a href="file_products.html"><li>Produtos</li></a>
+					<a href="file_main.html#sobre"><li>Sobre</li></a>
+					<a href="#openModal"><li>Entre</li></a>
+					<a href="cadastro.html"><li>Cadastre-se</li></a>
+				</ul>
+
+			</nav>
+
+			<div id="openModal" class="modalDialogEntrar">
+				<div>
+					<a href = "#close" title = "Close" class = "closePopupEntrar">X</a>
+					<h2>Entrar</h2>
+					<p>
+						<label>E-mail: </label>
+						<input type="username" class = "inputTextarea" placeholder="example@email.com" />
+					</p>
+					<p>
+						<label>Senha: </label>
+						<input type = "password" class = "inputTextarea" placeholder="alguma.senha" />
+					</p>
+					<a href="cadastro.html">
+						<input type = "button" value = "Cadastre-se" class = "botaoPopup">
+					</a>
+					<a href="#">
+						<input type = "button" value = "Entrar" class = "botaoPopup">
+					</a>
+				</div>
 			</div>
 
-			<!--menu-->
-			<ul class="menu">
-				<a href="file_main.html"><li>Home</li></a>
-				<a href="file_main.html#labelserv"><li>Nossos Serviços</li></a>
-				<li>Disponibilidade
-					<ul>
-						<a href="file_main.html#labelhorarios"><li>Horário de atendimento</li></a>
-						<a href="agendamento.html"><li>Marque um horário</li></a>
-					</ul>
-				</li>
-
-				<a href="file_products.html"><li>Produtos</li></a>
-				<a href="file_main.html#sobre"><li>Sobre</li></a>
-				<a href="#openModal"><li>Entre</li></a>
-				<a href="cadastro.html"><li>Cadastre-se</li></a>
-			</ul>
-
-		</nav>
-
-		<div id="openModal" class="modalDialogEntrar">
-			<div>
-				<a href = "#close" title = "Close" class = "closePopupEntrar">X</a>
-				<h2>Entrar</h2>
-				<p>
-					<label>E-mail: </label>
-					<input type="username" class = "inputTextarea" placeholder="example@email.com" />
-				</p>
-				<p>
-					<label>Senha: </label>
-					<input type = "password" class = "inputTextarea" placeholder="alguma.senha" />
-				</p>
-				<a href="cadastro.html">
-					<input type = "button" value = "Cadastre-se" class = "botaoPopup">
-				</a>
-				<a href="#">
-					<input type = "button" value = "Entrar" class = "botaoPopup">
-				</a>
-			</div>
 		</div>
+		<div class="divAgendar">
+			<div class="agendar">
 
-	</div>
-	<div class="divAgendar">
-		<div class="agendar">
+				<form name="form1" onsubmit="return valida();">
+					<fieldset class="field">
 
-			<form action="sucesso.html">
-				<fieldset class="field">
+						<p class="titulo">
+							<label for="name" >Nome completo: </label>
+							<input type="text" name="txtIndice" id="name1" class="inputTextarea" placeholder="ex.: Maria Cristina da Silva" required="required"  /><!--oninvalid='return validate(event)' onchange="habilitaBtn()"-->
+						</p>
 
-					<p class="titulo">
-						<label for="name" >Nome completo: </label>
-						<input type="text" id="name1" class="inputTextarea" placeholder="ex.: Maria Cristina da Silva" required="required"  /><!--oninvalid='return validate(event)' onchange="habilitaBtn()"-->
-					</p>
+						<p class="titulo">
 
-					<p class="titulo">
+							<label for="tipoAtend">Tipo de atendimento: <br/><br/></label>
+							<input type="checkbox" value="cabelo" name="atend" margin="5px"/> Cabelo <br/>
+							<input type="checkbox" value="unhas" name="atend" /> Unhas <br/>
+							<input type="checkbox" value="pele" name="atend" /> Pele <br/>
 
-						<label for="tipoAtend">Tipo de atendimento: <br/><br/></label>
-						<input type="checkbox" value="cabelo" name="atend" margin="5px"/> Cabelo <br/>
-						<input type="checkbox" value="unhas" name="atend" /> Unhas <br/>
-						<input type="checkbox" value="pele" name="atend" /> Pele <br/>
+						</p>
 
-					</p>
+						<p class="titulo">
 
-					<p class="titulo">
+							<label for=”detalheAtend”> O que você deseja? </label>
+							<p size="15px" top="100px">Detalhe o seu atendimento</p>
+							<textarea rows="10" cols="60" maxlength="500" class="inputTextarea" placeholder="Exemplo de detalhamento..." required="required">
+							</textarea>
+						</p>
 
-						<label for=”detalheAtend”> O que você deseja? </label>
-						<p size="15px" top="100px">Detalhe o seu atendimento</p>
-						<textarea rows="10" cols="60" maxlength="500" class="inputTextarea" placeholder="Exemplo de detalhamento..." required="required">
-						</textarea>
-					</p>
+						<p class="titulo">
 
-					<p class="titulo">
+							<label class="data" for=”dataAtend”> Data: </label>
 
-						<label class="data" for=”dataAtend”> Data: </label>
+							<input type="date" name="txtIndice" maxlength=10 size=8 class="inputTextarea" placeholder="24/03/2016" required="required" pattern="[0-9]{2}\/[0-9]{2}\/[0-9]{4}$" min="2016-02-01" max="2016-12-18" onkeypress='return onlyNumbersAndSpecialCharsDate(event)'/>
 
-						<input type="date" name="date" maxlength=10 size=8 class="inputTextarea" placeholder="24/03/2016" required="required" pattern="[0-9]{2}\/[0-9]{2}\/[0-9]{4}$" min="2016-02-01" max="2016-12-18" onkeypress='return onlyNumbersAndSpecialCharsDate(event)'/>
+							<label class="hora" for="horaAtend"> Hora: </label>
+							<input type="hour" name="txtIndice" id="hora" maxlength=5 size=10 class="inputTextarea" placeholder="16:30"required="required" name="hour" pattern="[0-9]{2}:[0-9]{2}$" onkeypress='return onlyNumbersAndSpecialCharsHour(event)' />
+						</p>
 
-						<label class="hora" for="horaAtend"> Hora: </label>
-						<input type="hour" id="hora" maxlength=5 size=10 class="inputTextarea" placeholder="16:30"required="required" name="hour" pattern="[0-9]{2}:[0-9]{2}$" onkeypress='return onlyNumbersAndSpecialCharsHour(event)' />
-					</p>
-
-				</fieldset><br/>
-				<center>
-					<input type="reset" value="Limpar" class="botao" />
-
-					<a href="#openModalCancelar"><input type="button" value="Cancelar" class="botao" /></a>
-
-					<div id="openModalCancelar" class="modalDialog">
-						<div>
-							<a href="#close" title="Close" class="close">X</a>
-							<h2>Deseja cancelar seu cadastro?</h2>
-							<a href="#close"><input type="button" value="Não" class="botao"></a>
-							<a href="file_main.html"><input type="button" value="Sim" class="botao"></a>
-						</div>
+					</fieldset><br/>
+					<div class="avisoAgend">
+						<p>* Preenchimento obrigatório</p>
 					</div>
+					<center>
+						<input type="reset" value="Limpar" class="botao" />
 
-					<input type="submit" id="enviar" value="Enviar" class="botao" />
-				</center>
-			</form>
+						<a href="#openModalCancelar"><input type="button" value="Cancelar" class="botao" /></a>
+
+						<div id="openModalCancelar" class="modalDialog">
+							<div>
+								<a href="#close" title="Close" class="close">X</a>
+								<h2>Deseja cancelar seu cadastro?</h2>
+								<a href="#close"><input type="button" value="Não" class="botao"></a>
+								<a href="file_main.html"><input type="button" value="Sim" class="botao"></a>
+							</div>
+						</div>
+
+						<input type="submit" id="enviar" value="Enviar" class="botao" />
+
+						
+					</center>
+				</form>
+			</div>
 		</div>
 	</div>
 </body>

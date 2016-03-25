@@ -2,6 +2,11 @@ body{
 	background: #FFDAB9;
 }
 
+.container{
+	width: 89.7em;
+	height: 60em;
+}
+
 .inputTextarea{
 	-webkit-transition: all 0.30s ease-in-out;
 	-moz-transition: all 0.30s ease-in-out;
@@ -71,10 +76,10 @@ body{
 }
 
 .cadField{
-	margin: 5em 9em 20px 9em;
+	margin: 5em 9em 2em 9em;
 	padding: 1em;
 	border-radius: 2em;
-	border: 3px solid #800000;
+	border: 0.3em solid #800000;
 
 }
 
@@ -90,7 +95,7 @@ input:required:invalid {
 .aviso{
 	width: 15em;
 	height: 2em;
-	margin-left: 13em;
+	margin-left: 10em;
 	background:#FFDAB9;
 	position: absolute;
 	float: left;
@@ -99,4 +104,8 @@ input:required:invalid {
 
 .aviso p{
 	font-size: 1.1em;
+}
+
+.avisoAgend{
+	margin-left: 3em;
 }
