@@ -309,27 +309,3 @@ a:link{
     text-align: center;
 }
 
-/*Cadastro*/
-
-.divCad{
-	top: 130px;
-	position: relative;
-}
-
-.cadTitulo{
-	position: relative;
-	font-size: 25px;
-	margin-left: 10%;
-	top: 30px;
-	margin-bottom: 5%;
-}
-
-.cadField{
-	margin: 20px 10% 20px 10%;
-
-}
-
-.cadField label, input, select{
-	margin: 15px 0px 5px 1%;
-	
-}

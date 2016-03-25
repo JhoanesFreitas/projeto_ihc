@@ -12,31 +12,30 @@ body{
 	margin: 5px 1px 3px 0px;
 	border: 1px solid #DDDDDD;
 }
-.inputTextarea:focus
-{
-	box-shadow: 0 0 5px rgba(81, 203, 238, 1);
-	padding: 3px 0px 3px 3px;
-	margin: 5px 1px 3px 0px;
+.inputTextarea:focus{
+	box-shadow: 0 0 0.3em rgba(81, 203, 238, 1);
+	padding: 0.3em 0.2em 0.3em 0.3em;
+	margin: 0.3em 0em 0em 0em;
 	border: 1px solid rgba(81, 203, 238, 1);	
 }
 
 .field {
-	padding: 2%;
-	border-radius: 10px;
+	padding: 2em;
+	border-radius: 2em;
 	border: 3px solid #800000;
 }
 
 .titulo{
-	font-size: 19px;
-	margin-top: 13px;
+	font-size: 1.2em;
+	margin-top: 1em;
 	color: #B22222;
 }
 
 .agendar{
 	position: relative;
-	top: 150px;
-	margin-left: 20%;
-	margin-right: 20%;
+	top: 13em;
+	margin-left: 20em;
+	margin-right: 20em;
 }
 
 .hora{
@@ -49,41 +48,55 @@ body{
 	font-weight: bold;
 	color: white;
 	background: #638cb5;
-	border: 0px;
-	width: 130px;
-	height: 40px;
-	margin: 0px 3% 70px 3%;
+	border: 0em;
+	width: 6em;
+	height: 2em;
+	margin: 3em 2em 5em 2em;
 	text-align: center;
 }
 
 /*Cadastro*/
 
 .divCad{
-	top: 130px;
+	top: 6em;
 	position: relative;
 }
 
 .cadTitulo{
 	position: relative;
-	font-size: 25px;
-	margin-left: 10%;
-	top: 30px;
-	margin-bottom: 5%;
+	font-size: 2em;
+	margin-left: 5em;
+	top: 1em;
+	margin-bottom: 3em;
 }
 
 .cadField{
-	margin: 20px 10% 20px 10%;
-	padding: 2%;
-	border-radius: 10px;
+	margin: 5em 9em 20px 9em;
+	padding: 1em;
+	border-radius: 2em;
 	border: 3px solid #800000;
 
 }
 
 .cadField form, label, input, select{
-	margin: 15px 0px 5px 1%;
+	margin: 1em 0em 0em 1em;
 	
 }
 
 input:required:invalid {
 	animation-name: all;
+}
+
+.aviso{
+	width: 15em;
+	height: 2em;
+	margin-left: 13em;
+	background:#FFDAB9;
+	position: absolute;
+	float: left;
+	
+}
+
+.aviso p{
+	font-size: 1.1em;
 }
