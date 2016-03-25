@@ -72,51 +72,20 @@
 	background: #ffffff;
 }
 
-/*Menu lateral*/
+/*Menu lateral cabelos*/
 
-.menuLateral{ 
-	margin-top: 4%; /* retira o recuo para alguns browsers */
-	padding: 0; /* retira o recuo para outros browsers */
-	background-color: #800000; /* cor do fundo */ 
-	width: 16%; /* uma largura para o menu */ 
-	border: 1px solid #003399; 
-	/* uma borda em volta do menu */ 
-}
+.menuLateralCabelos{ margin-top: 4%; }
 
-.menuLateral li {
-	list-style-type: none; /* retira o marcador de listas*/ 
-	border-bottom:1px solid #a4a0f5; /* coloca uma borda azul entre links */ 
-	padding-top: 5%;
-	padding-bottom: 5%;
-	padding-left: 6%;
-}
-
-.menuLateral li a:link {
-	text-decoration: none; /* retira o sublinhado dos links */ 
+.menuLateralCabelos p{
+	font-size: 25px;
+	margin-left: 0%;
+	font-family: Calibri, Arial, Helvetica;
+	color: #FFFFFF;
 	font-weight: bold;
-	font-family: Arial, Helvetica, sans-serif; /* define o tipo de fonte */ 
-	font-size:14px; /* define o tamanho da fonte */ 
-	color:#5e0f50; /* define a cor da fonte */ 
+	text-shadow:0px 0px 3px #FFFFFF;
+	background: -moz-linear-gradient(#800000, #8B0000, #B22222 75%);
+	width: 16%;
+	height: 50px;
+	text-align: center;
+	padding-top: 1%;
 }
-
-.menuLateral li:hover {
-	background-color: #FFE4B5; /* cor do fundo */
-	color: #DAA520; /* cor da fonte */
-	display: block;
-}
-
-.menuLateral li:hover ul, .menuLateral li.over ul {
-	display: block;
-}
-
-.menuLateral li a:link, .menuLateral li a:visited {
-	display: block;
-	
-}
-
-/*Sub-itens*/
-
-
-
-
-
