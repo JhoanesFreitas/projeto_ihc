@@ -14,8 +14,11 @@ body{
 
 /*configurações no menu como todo*/
 .menu{
+	width: 100%;
+	height: 9%;
 	z-index: 999;
 	margin-top: 0px;
+	text-align: center;
 	list-style: none;
 	border: 10% solid #c0c0c0;
 	background-color: #800000;/*#6A5ACD*/
@@ -54,6 +57,8 @@ body{
 .menu a li{
 	position: relative;
 	float: left;
+	height: 30%;
+	font-size: 100%;
 	padding: 1%;
 	border-right: 1% solid #c0c0c0;
 	padding-left: 40px;

@@ -6,6 +6,8 @@
 
 .home_init{
 	position: absolute;
+	width: 100%;
+	height: 80%;
 	margin:14% 10% 0 22%;
 	padding: 30px;
 	padding-top: 5px;
@@ -34,7 +36,7 @@ a:link{
 }
 
 .nomeSalao{
-	margin-top: 1%;
+	margin-top: 0%;
 	margin-right: 0%;
 	margin-left: 0%;
 	width: 100.6%;
@@ -47,13 +49,15 @@ a:link{
 
 /*Nome abaixo do menu*/
 .nome_salao{
+	width: 100%;
+	height: 10%;
 	padding: 0% 0% 4% 0%;
 	position: relative;
 	font-size: 340%;
 	color: #F0E68C;
 	text-align: center;
 	float: left;
-	margin: 7% 0px 0px 25%;
+	margin: 7% 0px 1.7% 0%;
 	letter-spacing: 20px;
 }
 
@@ -61,15 +65,16 @@ a:link{
 
 .home_init{
 	width: 95%;
-	top: 28px;
+	top: 5%;
 	border: none;
+	padding-top: 5%;
 	margin-left: 0%;
 	background: #8B0000;
 }
 
 .home_init p{
 	color: #FFFFFF;
-	font-size: 20px;
+	font-size: 140%;
 	font-family: Calibri;
 	float: left;
 	top: 30px;
@@ -79,7 +84,9 @@ a:link{
 
 .home_products{
 	position: absolute;
-	margin: 58% 0 0% 9%;
+	height: 21%;
+	width: 74%;
+	margin: 63% 0 0% 0%;
 	margin-right: 10%;
 	margin-left: 12%;
 	padding: 1%;
@@ -92,7 +99,7 @@ a:link{
 
 .home_products figure{
 	position: relative;
-	width: 120px;
+	width: 12%;
 	height: 110px;
 	margin-right: 35px;
 	float: left;
@@ -139,14 +146,13 @@ a:link{
 }
 
 .cuidados{
-	font-size: 20px;
+	font-size: 120%;
 	text-align: justify;
 	font-family: Calibri, Arial;
 	position: relative;
 	float: left;
-	margin: 140px 0px 0px -20%;
+	margin: 10% 0px 0px -20%;
 }
-
 
 /*Menu horarios*/
 
@@ -163,7 +169,7 @@ a:link{
 	color: #B22222;
 	font-size: 35px;
 	position: relative;
-	margin: 40px 0px 0px 5%;
+	margin: 4% 0px 0px 5%;
 	float: left;
 }
 
@@ -177,6 +183,8 @@ a:link{
 }
 
 .home_sobre{
+	height: 100%;
+	width: 72%;
 	position: relative;
 	margin: 5% 5% 2% 10%;
 	padding: 14px;
