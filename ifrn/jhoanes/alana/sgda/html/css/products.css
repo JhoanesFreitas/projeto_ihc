@@ -1,30 +1,29 @@
 .table_products table{
 	position: absolute;
-	margin-top: 15%;
-	margin-left: 15%;
+	margin-top: 10em;
+	margin-left: 14em;
 }
 
 .table_products table tr td figure a img{
-
-	width: 45%;
-	height: 20%;
-	margin: 13%;
+	width: 8em;
+	height: 7em;
+	margin: 2em 2em 2em 0em;
 
 }
 
 .table_products figcaption{
 	position: relative;
 	text-align: center;
-	width: 120px;
-	height: 100px;
-	margin-left: 18%;
+	width: 10em;
+	height: 10em;
+	left: -1.3em;
 }
 
 .divMainProducts{
 	margin-right: 0%;
 	margin-left: 0%;
-	width: 99.5%;
-	height: 300%;
+	width: 89.7em;
+	height: 110em;
 	border: none;
 	background-color: #FFDAB9;
 	position: absolute;
@@ -32,60 +31,44 @@
 }
 
 .divMainProducts table{
-	top: -8%;
+	top: -6em;
 }
 
 .divFigure{
-	width: 65%;
+	width: 11em;
 	border: 1px solid;
-	height: 30%;
+	height: 12em;
 	position: relative;
 	float: left;
 	background: #ffffff;
-	margin-left: 10%;
-	margin-top: 40%;
+	margin-left: 6em;
+	margin-top: 6em;
 	border: none;
 }
 
 .divFigure figure a figcaption{
-	margin-top: 10%;
-	margin-bottom: -50%;
-	margin-left: -30%;
-	font-size: 15px;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: -2em;
+	font-size: 1em;
 	color: #000000;
 	position: absolute;
 }
 
 .divFigure figure a figcaption p{
-	margin-top: 0%;
-	margin-bottom: -50%;
-	margin-left: -6%;
-	font-size: 20px;
+	margin-top: 0em;
+	margin-bottom: 1em;
+	margin-left: 0em;
+	font-size: 1.5em;
 	color: #B22222;
 }
 
 .figCaption{
 	position: absolute;
-	margin-top: 5%;
-	width: 65%;
-	left: 38%;
+	margin-top: 0em;
+	width: 10em;
+	left: 4em;
 	background: #ffffff;
 }
 
-/*Menu lateral cabelos*/
 
-.menuLateralCabelos{ margin-top: 4%; }
-
-.menuLateralCabelos p{
-	font-size: 25px;
-	margin-left: 0%;
-	font-family: Calibri, Arial, Helvetica;
-	color: #FFFFFF;
-	font-weight: bold;
-	text-shadow:0px 0px 3px #FFFFFF;
-	background: -moz-linear-gradient(#800000, #8B0000, #B22222 75%);
-	width: 16%;
-	height: 50px;
-	text-align: center;
-	padding-top: 1%;
-}

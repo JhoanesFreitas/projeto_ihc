@@ -27,7 +27,7 @@ a:link{
 /*Div que engloba imagem e menu*/
 .cabecalho{
 	z-index: 2;
-	width: 100em;
+	width: 89.7em;
 	height: 3.6em;
 	border: none;
 	background: #800000;
@@ -39,8 +39,8 @@ a:link{
 	margin-top: 0%;
 	margin-right: 0%;
 	margin-left: 0%;
-	width: 100.6%;
-	height: 15%;
+	width: 89.7em;
+	height: 15em;
 	border: none;
 	background-color: #FF7F50;
 	position: relative;
@@ -49,26 +49,27 @@ a:link{
 
 /*Nome abaixo do menu*/
 .nome_salao{
-	width: 100%;
-	height: 10%;
-	padding: 0% 0% 4% 0%;
+	width: 23em;
+	height: 2em;
+	padding: 0em 0em 4em 0em;
 	position: relative;
 	font-size: 4em;
 	color: #F0E68C;
 	text-align: center;
 	float: left;
-	margin: 7% 0px 1.7% 0%;
+	margin: 1.5em 0em 1.7em 0em;
 	letter-spacing: 20px;
 }
 
 /*alinhamento do texto nos parágrafos*/
 
 .home_init{
-	width: 95%;
-	top: 5%;
+	width: 85.7em;
+	height: 30em;
+	top: 2em;
 	border: none;
-	padding-top: 5%;
-	margin-left: 0%;
+	padding-top: 4em;
+	margin-left: 0em;
 	background: #8B0000;
 }
 
@@ -77,18 +78,16 @@ a:link{
 	font-size: 1.3em;
 	font-family: Calibri;
 	float: left;
-	top: 30px;
 	text-align: justify;
-	padding: 1% 10% 0% 10%;
+	padding: 1em 6em 0em 6em;
 }
 
 .home_products{
 	position: absolute;
-	height: 21%;
-	width: 74%;
-	margin: 63% 0 0% 0%;
-	margin-right: 10%;
-	margin-left: 12%;
+	height: 8.3em;
+	width: 67em;
+	margin: 57em 0 0em 0em;
+	margin-left: 10em;
 	padding: 1%;
 	border: 1px solid #800000;	
 	text-align: center;
@@ -127,10 +126,10 @@ a:link{
 /*Menu serviços*/
 
 .servicos{
-	width: 100.6%;
-	height: 10%;
+	width: 89.7em;
+	height: 48em;
 	background: #FFDAB9;
-	margin-top: 30%;
+	margin-top: 30em;
 	float: left;
 	 
 }
@@ -141,7 +140,7 @@ a:link{
 	color: #B22222;
 	text-align: justify;
 	position: relative;
-	margin: 2% 2% 0px 6%;
+	margin: 1em 1em 0em 3em;
 	float: left;
 }
 
@@ -151,17 +150,17 @@ a:link{
 	font-family: Calibri, Arial;
 	position: relative;
 	float: left;
-	margin: 10% 0px 0px -20%;
+	margin: 6em 0em 0em -12em;
 }
 
 /*Menu horarios*/
 
 .horarios{
-	width: 100.6%;
-	height: 10%;
+	width: 89.7em;
+	height: 40em;
 	background: #FFDAB9;
-	margin-top: -7%;
-	padding-top: 7%;
+	margin-top: -7em;
+	padding-top: 7em;
 	float: left;
 }
 
@@ -169,7 +168,7 @@ a:link{
 	color: #B22222;
 	font-size: 2.5em;
 	position: relative;
-	margin: 4% 0px 0px 5%;
+	margin: 1em 0em 0em 2em;
 	float: left;
 }
 
@@ -178,83 +177,82 @@ a:link{
 	text-align: center;
 	position: relative;
 	float: left;
-	margin: 150px 14% 0px -12%;
+	margin: 8em 8em 0em -7em;
 	list-style-type: none;
 }
 
 .home_sobre{
-	height: 100%;
-	width: 72%;
+	height: 11em;
+	width: 66em;
 	position: relative;
-	margin: 5% 5% 2% 10%;
-	padding: 14px;
+	margin: 5em 5em 2em 10em;
+	padding: 1em;
 	float: left;
-	border: 1px solid #c0c0c0;	
+	border: 0.1em solid #c0c0c0;	
 	text-align: center;
 	overflow: auto;
 }
 
 .home_sobre h4{
-
 	float: left;
-	margin-top: 1%;
+	margin-top: 1em;
 	text-align: justify;
 }
 
 
 #saloes{
-	margin-left: 45px;
-	margin-right: 180px;
+	margin-left: 3em;
+	margin-right: 12em;
 }
 
 #contato{
-	margin-left: 120px;
+	margin-left: 8em;
 	
 }
 
 #sociais{
-	margin-left: 300px;
-	padding-right: 50px;
+	margin-left: 20em;
+	padding-right: 4em;
 }
 
 #list_city{
 	position: relative;
-	margin-top: 20px;
-	margin-left: -75%;
+	margin-top: 3em;
+	margin-left: -50em;
 }
 
 #list_tel{
-	margin-top: -90px;
-	margin-left: 45%;
+	margin-top: -7em;
+	margin-left: 30em;
 	text-align: justify;
 }
 
 #list_sociais{
-	margin-top: -90px;
-	margin-left: 800px;
+	margin-top: -8em;
+	margin-left: 52em;
 	text-align: justify;
 }
 
 .home_sobre ul li{
 	list-style: none !important;
-	margin-top: 2px;
+	margin-top: 0.5em;
 }
 
 .home_sobre ul li img{
 	list-style: none !important;
-	padding-right: 5px;
+	padding-right: 0em;
 }
 
 /*Agendamento*/
 
 .divAgendar{
-	width: 100.6%;
-	height: 900px;
+	width: 89.7em;
+	height: 60em;
 	background: #FFDAB9;
 	position: relative;
 	float: left;
 	border: none;
-	margin-top: 3%;
+	margin-top: 3em;
 }
 
 .inputTextarea{
@@ -263,75 +261,51 @@ a:link{
   -ms-transition: all 0.30s ease-in-out;
   -o-transition: all 0.30s ease-in-out;
   outline: none;
-  padding: 3px 0px 3px 3px;
-  margin: 5px 1px 3px 0px;
+  padding: 0.2em 0em 0.2em 0.2em;
+  margin: 0.5em 1em 0.5em 0em;
   border: 1px solid #DDDDDD;
 }
-.inputTextarea:focus
-{
-  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
-  padding: 3px 0px 3px 3px;
-  margin: 5px 1px 3px 0px;
+
+.inputTextarea:focus{
+  box-shadow: 0 0 0.5em rgba(81, 203, 238, 1);
+  padding: 3em 0em 3em 3em;
+  margin: 5em 1em 3em 0em;
   border: 1px solid rgba(81, 203, 238, 1);	
 }
 
 .field{
-	padding: 2%;
-	border-radius: 10px;
+	padding: 2em;
+	border-radius: 2em;
 	border: 3px solid #800000;
 }
 
 .titulo{
-	font-size: 19px;
-	margin-top: 13px;
+	font-size: 1.3em;
+	margin-top: 1em;
 	color: #B22222;
 }
 
 .agendar{
 	position: relative;
-	top: 150px;
-	margin-left: 20%;
-	margin-right: 20%;
+	top: 8em;
+	margin-left: 15em;
+	margin-right: 15em;
 }
 
 .hora{
-	margin-left: 10%;
+	margin-left: 5em;
 }
 
 .botao{
-	font-size: 20px;
+	font-size: 1.3em;
     font-family: Verdana,Helvetica;
     font-weight: bold;
     color: white;
     background: #638cb5;
-    border: 0px;
-    width: 130px;
-    height: 40px;
-    margin: 0px 3% 70px 3%;
+    border: 0em;
+    width: 7em;
+    height: 2em;
+    margin: 0em 2em 4em 2em;
     text-align: center;
 }
 
-/*Cadastro*/
-
-.divCad{
-	top: 130px;
-	position: relative;
-}
-
-.cadTitulo{
-	position: relative;
-	font-size: 25px;
-	margin-left: 10%;
-	top: 30px;
-	margin-bottom: 5%;
-}
-
-.cadField{
-	margin: 20px 10% 20px 10%;
-
-}
-
-.cadField label, input, select{
-	margin: 15px 0px 5px 1%;
-	
-}

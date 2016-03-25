@@ -14,10 +14,10 @@ body{
 
 /*configurações no menu como todo*/
 .menu{
-	width: 100em;
+	width: 72em;
 	height: 3.6em;
 	z-index: 999;
-	margin-top: 0px;
+	margin-top: 0em;
 	text-align: center;
 	list-style: none;
 	border: 10% solid #c0c0c0;
@@ -153,8 +153,8 @@ body{
 }
 
 .horizontal {
-	margin-top: 30%;
-	width: 100%;
+	margin-top: 27em;
+	width: 89.7em;
 	position: relative;
 	float: left;
 	color: #800000;
@@ -162,8 +162,8 @@ body{
 }
 
 .horizontal_horarios {
-	margin-top: 2%;
-	width: 100.6%;
+	margin-top: 2em;
+	width: 89.7em;
 	position: relative;
 	float: left;
 	color: #800000;
@@ -171,8 +171,8 @@ body{
 }
 
 .horizontal_sobre{
-	margin-top: 5%;
-	width: 100%;
+	margin-top: 5em;
+	width: 89.7em;
 	position: relative;
 	float: left;
 	color: #800000;
@@ -181,10 +181,10 @@ body{
 
 .vertical{ /*tentando criar uma linha vertical*/
 	position: relative;
-	width: 4px;
+	width: 0.3em;
 	float: left;
-	margin-top: 10px;
-	margin-left: 4%;
+	margin-top: 1em;
+	margin-left: 3em;
 	color: #800000;
 	background: #800000;
 }
