@@ -27,8 +27,8 @@ a:link{
 /*Div que engloba imagem e menu*/
 .cabecalho{
 	z-index: 2;
-	width: 100%;
-	height: 9%;
+	width: 100em;
+	height: 3.6em;
 	border: none;
 	background: #800000;
 	position: fixed;
@@ -53,7 +53,7 @@ a:link{
 	height: 10%;
 	padding: 0% 0% 4% 0%;
 	position: relative;
-	font-size: 340%;
+	font-size: 4em;
 	color: #F0E68C;
 	text-align: center;
 	float: left;
@@ -74,7 +74,7 @@ a:link{
 
 .home_init p{
 	color: #FFFFFF;
-	font-size: 140%;
+	font-size: 1.3em;
 	font-family: Calibri;
 	float: left;
 	top: 30px;
@@ -136,7 +136,7 @@ a:link{
 }
 
 .servicos p{
-	font-size: 30px;
+	font-size: 2em;
 	font-family: Calibre, Arial;
 	color: #B22222;
 	text-align: justify;
@@ -146,7 +146,7 @@ a:link{
 }
 
 .cuidados{
-	font-size: 120%;
+	font-size: 1.5em;
 	text-align: justify;
 	font-family: Calibri, Arial;
 	position: relative;
@@ -167,14 +167,14 @@ a:link{
 
 .horarios p{
 	color: #B22222;
-	font-size: 35px;
+	font-size: 2.5em;
 	position: relative;
 	margin: 4% 0px 0px 5%;
 	float: left;
 }
 
 .dias_semana{
-	font-size: 22px;
+	font-size: 1.3em;
 	text-align: center;
 	position: relative;
 	float: left;

@@ -8,8 +8,8 @@
 .drawable img{
 	float: left;
 	z-index: 2;
-	width: 15%;
-	height: 8.8%;
+	width: 14em;
+	height: 3.5em;
 	margin: 0px 0px 20px 40px;	
 	position: fixed;
 }
