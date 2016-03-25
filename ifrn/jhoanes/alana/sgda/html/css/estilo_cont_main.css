@@ -140,7 +140,7 @@ a:link{
 	color: #B22222;
 	text-align: justify;
 	position: relative;
-	margin: 2% 2% 0px 6%;
+	margin: 1em 1em 0em 3em;
 	float: left;
 }
 
@@ -150,17 +150,17 @@ a:link{
 	font-family: Calibri, Arial;
 	position: relative;
 	float: left;
-	margin: 10% 0px 0px -20%;
+	margin: 6em 0em 0em -12em;
 }
 
 /*Menu horarios*/
 
 .horarios{
-	width: 100.6%;
-	height: 10%;
+	width: 89.7em;
+	height: 40em;
 	background: #FFDAB9;
-	margin-top: -7%;
-	padding-top: 7%;
+	margin-top: -7em;
+	padding-top: 7em;
 	float: left;
 }
 
@@ -168,7 +168,7 @@ a:link{
 	color: #B22222;
 	font-size: 2.5em;
 	position: relative;
-	margin: 4% 0px 0px 5%;
+	margin: 1em 0em 0em 2em;
 	float: left;
 }
 
@@ -177,71 +177,70 @@ a:link{
 	text-align: center;
 	position: relative;
 	float: left;
-	margin: 150px 14% 0px -12%;
+	margin: 8em 8em 0em -7em;
 	list-style-type: none;
 }
 
 .home_sobre{
-	height: 100%;
-	width: 72%;
+	height: 11em;
+	width: 66em;
 	position: relative;
-	margin: 5% 5% 2% 10%;
-	padding: 14px;
+	margin: 5em 5em 2em 10em;
+	padding: 1em;
 	float: left;
-	border: 1px solid #c0c0c0;	
+	border: 0.1em solid #c0c0c0;	
 	text-align: center;
 	overflow: auto;
 }
 
 .home_sobre h4{
-
 	float: left;
-	margin-top: 1%;
+	margin-top: 1em;
 	text-align: justify;
 }
 
 
 #saloes{
-	margin-left: 45px;
-	margin-right: 180px;
+	margin-left: 3em;
+	margin-right: 12em;
 }
 
 #contato{
-	margin-left: 120px;
+	margin-left: 8em;
 	
 }
 
 #sociais{
-	margin-left: 300px;
-	padding-right: 50px;
+	margin-left: 20em;
+	padding-right: 4em;
 }
 
 #list_city{
 	position: relative;
-	margin-top: 20px;
-	margin-left: -75%;
+	margin-top: 3em;
+	margin-left: -50em;
 }
 
 #list_tel{
-	margin-top: -90px;
-	margin-left: 45%;
+	margin-top: -7em;
+	margin-left: 30em;
 	text-align: justify;
 }
 
 #list_sociais{
-	margin-top: -90px;
-	margin-left: 800px;
+	margin-top: -8em;
+	margin-left: 52em;
 	text-align: justify;
 }
 
 .home_sobre ul li{
 	list-style: none !important;
-	margin-top: 2px;
+	margin-top: 0.5em;
 }
 
 .home_sobre ul li img{
 	list-style: none !important;
-	padding-right: 5px;
+	padding-right: 0em;
 }
 
 /*Agendamento*/
