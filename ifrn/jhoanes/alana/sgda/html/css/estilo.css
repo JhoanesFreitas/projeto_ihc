@@ -14,10 +14,10 @@ body{
 
 /*configurações no menu como todo*/
 .menu{
-	width: 100em;
+	width: 72em;
 	height: 3.6em;
 	z-index: 999;
-	margin-top: 0px;
+	margin-top: 0em;
 	text-align: center;
 	list-style: none;
 	border: 10% solid #c0c0c0;

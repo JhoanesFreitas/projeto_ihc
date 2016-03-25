@@ -27,7 +27,7 @@ a:link{
 /*Div que engloba imagem e menu*/
 .cabecalho{
 	z-index: 2;
-	width: 100em;
+	width: 89.7em;
 	height: 3.6em;
 	border: none;
 	background: #800000;
@@ -39,8 +39,8 @@ a:link{
 	margin-top: 0%;
 	margin-right: 0%;
 	margin-left: 0%;
-	width: 100.6%;
-	height: 15%;
+	width: 89.7em;
+	height: 15em;
 	border: none;
 	background-color: #FF7F50;
 	position: relative;
@@ -49,26 +49,27 @@ a:link{
 
 /*Nome abaixo do menu*/
 .nome_salao{
-	width: 100%;
-	height: 10%;
-	padding: 0% 0% 4% 0%;
+	width: 23em;
+	height: 2em;
+	padding: 0em 0em 4em 0em;
 	position: relative;
 	font-size: 4em;
 	color: #F0E68C;
 	text-align: center;
 	float: left;
-	margin: 7% 0px 1.7% 0%;
+	margin: 1.5em 0em 1.7em 0em;
 	letter-spacing: 20px;
 }
 
 /*alinhamento do texto nos parágrafos*/
 
 .home_init{
-	width: 95%;
-	top: 5%;
+	width: 85.7em;
+	height: 30em;
+	top: 2em;
 	border: none;
-	padding-top: 5%;
-	margin-left: 0%;
+	padding-top: 4em;
+	margin-left: 0em;
 	background: #8B0000;
 }
 
@@ -77,18 +78,16 @@ a:link{
 	font-size: 1.3em;
 	font-family: Calibri;
 	float: left;
-	top: 30px;
 	text-align: justify;
-	padding: 1% 10% 0% 10%;
+	padding: 1em 6em 0em 6em;
 }
 
 .home_products{
 	position: absolute;
-	height: 21%;
-	width: 74%;
-	margin: 63% 0 0% 0%;
-	margin-right: 10%;
-	margin-left: 12%;
+	height: 8.3em;
+	width: 67em;
+	margin: 57em 0 0em 0em;
+	margin-left: 10em;
 	padding: 1%;
 	border: 1px solid #800000;	
 	text-align: center;
@@ -127,10 +126,10 @@ a:link{
 /*Menu serviços*/
 
 .servicos{
-	width: 100.6%;
-	height: 10%;
+	width: 89.7em;
+	height: 48em;
 	background: #FFDAB9;
-	margin-top: 30%;
+	margin-top: 30em;
 	float: left;
 	 
 }
