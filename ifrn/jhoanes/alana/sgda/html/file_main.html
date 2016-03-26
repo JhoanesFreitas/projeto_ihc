@@ -23,7 +23,35 @@
 	<!--[endif]-->
 	
 
+
 </head>
+
+<script language='javascript' type="text/javascript">
+
+	function valida()
+	{
+		if (popEnter.usrname.value != "" && popEnter.password.value != ""){
+			alert("Agendamento realizado com sucesso!");
+			/*var r = confirm("Press a button");
+			if (r == true) {
+				x = "You pressed OK!";
+				close.window.script;
+				//alert("Agendamento realizado com sucesso!");
+				//varWindow = window.open ('file_products.html', 'popup');
+			} else {
+				x = "You pressed Cancel!";
+			}*/ 
+			//var answer = confirm ("Please click on OK to continue.")
+			//varWindow = window.open ('file_products.html', 'popup');
+			//window.close();
+			//open.location.href=open
+			return true;
+		}else{
+			alert("Agendamento não realizado!");
+			varWindow = window.open ('file_products.html', 'popup');
+		}
+	}
+</script>
 
 <body>
 	<div class="cabecalho">
@@ -60,20 +88,20 @@
 			<div>
 				<a href = "#close" title = "Close" class = "closePopupEntrar">X</a>
 				<h2>Entrar</h2>
-				<p>
-					<label>E-mail: </label>
-					<input type="username" class = "inputTextarea" placeholder="example@email.com" />
-				</p>
-				<p>
-					<label>Senha: </label>
-					<input type = "password" class = "inputTextarea" placeholder="alguma.senha" />
-				</p>
-				<a href="cadastro.html">
-					<input type = "button" value = "Cadastre-se" class = "botaoPopup">
-				</a>
-				<a href="#">
-					<input type = "button" value = "Entrar" class = "botaoPopup">
-				</a>
+				<form name="popEnter" onsubmit="return valida();">
+					<p>
+						<label>E-mail: </label>
+						<input type="username" name="usrname" required="required" class = "inputTextarea" placeholder="example@email.com" />
+					</p>
+					<p>
+						<label>Senha: </label>
+						<input type = "password" name="password" required="required" class = "inputTextarea" placeholder="alguma.senha" />
+					</p>
+					<a href="cadastro.html">
+						<input type = "button" value = "Cadastre-se" class = "botaoPopup">
+					</a>
+					<input type = "submit" name = "sub" value = "Entrar" class = "botaoPopup">
+				</form>
 			</div>
 		</div>
 
