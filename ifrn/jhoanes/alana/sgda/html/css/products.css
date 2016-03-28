@@ -19,6 +19,18 @@
 	left: -1.3em;
 }
 
+.div_link{
+	margin-top: 5em;
+	margin-left: 20em;
+	margin-bottom: -13em;
+	padding: 0em;
+}
+
+.div_link p{
+	font-size: 2em;
+	color: #000;
+}
+
 .divMainProducts{
 	margin-right: 0%;
 	margin-left: 0%;

@@ -43,6 +43,17 @@ body{
 	margin-right: 20em;
 }
 
+.div_link{
+	margin-top: 3em;
+	margin-left: 21em;
+	margin-bottom: -13em;
+	padding: 0em;
+}
+
+.div_link p{
+	font-size: 2em;
+}
+
 .hora{
 	margin-left: 10%;
 }
