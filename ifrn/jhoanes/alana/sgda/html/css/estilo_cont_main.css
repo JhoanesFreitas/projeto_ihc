@@ -187,6 +187,7 @@ a:link{
 	position: relative;
 	margin: 5em 5em 2em 10em;
 	padding: 1em;
+	padding-left: 3em;
 	float: left;
 	border: 0.1em solid #c0c0c0;	
 	text-align: center;
@@ -199,10 +200,31 @@ a:link{
 	text-align: justify;
 }
 
+.saloes_list{
+	font-size: -2em;
+	margin-left: -45em;
+}
+
+.saloes_contato_list{
+	font-size: -2em;
+	margin-left: -54em;
+}
+
+.saloes_redes_sociais{
+	margin-left: -10em;
+}
+
+#social1{
+	margin-left: -10.5em;
+}
+
+#social2{
+	margin-left: -12em;
+}
 
 #saloes{
-	margin-left: 3em;
-	margin-right: 12em;
+	margin-left: 4em;
+	margin-right: 11em;
 }
 
 #contato{
@@ -211,8 +233,8 @@ a:link{
 }
 
 #sociais{
-	margin-left: 20em;
-	padding-right: 4em;
+	margin-left: 19em;
+	padding-right: 0em;
 }
 
 #list_city{
@@ -220,6 +242,7 @@ a:link{
 	margin-top: 3em;
 	margin-left: -50em;
 }
+
 
 #list_tel{
 	margin-top: -7em;
